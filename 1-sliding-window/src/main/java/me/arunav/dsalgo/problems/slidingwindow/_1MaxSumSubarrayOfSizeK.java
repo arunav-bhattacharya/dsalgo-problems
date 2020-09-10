@@ -18,8 +18,7 @@ public class _1MaxSumSubarrayOfSizeK {
             for (int j = i; j < i + k; j++) {
                 sum += arr[j];
             }
-            if (sum > maxSum)
-                maxSum = sum;
+            maxSum = Math.max(maxSum, sum);
             sum = 0;
         }
 
@@ -30,7 +29,7 @@ public class _1MaxSumSubarrayOfSizeK {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
 
-            if (i >=  k - 1) {
+            if (i >= k - 1) {
                 maxSum = Math.max(maxSum, sum);
                 sum = sum - arr[j];
                 j++;

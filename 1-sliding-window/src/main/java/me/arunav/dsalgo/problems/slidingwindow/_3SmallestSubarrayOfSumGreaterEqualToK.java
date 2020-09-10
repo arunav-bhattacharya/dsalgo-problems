@@ -8,14 +8,14 @@ public class _3SmallestSubarrayOfSumGreaterEqualToK {
         System.out.println(findMinSubArray(8, new int[]{3, 4, 1, 1, 6}));
     }
 
-    public static int findMinSubArray(int S, int[] arr) {
+    public static int findMinSubArray(int K, int[] arr) {
         int minCount = Integer.MAX_VALUE;
         int sum = 0;
         // Brute Force
         for (int i=0; i< arr.length; i++){
             for (int j=i; j< arr.length; j++){
                 sum += arr[j];
-                if(sum >= S){
+                if(sum >= K){
                     minCount = Math.min(minCount, (j-i) + 1);
                     break;
                 }
@@ -25,16 +25,18 @@ public class _3SmallestSubarrayOfSumGreaterEqualToK {
 
         // Sliding Window
         minCount = Integer.MAX_VALUE;
-        int j = 0;
+        int startIdx = 0;
+        int endIdx = 0;
         sum = 0;
-        for(int i=0; i< arr.length; i++){
-            sum += arr[i];
-            while(sum >= S){
-                minCount = Math.min(minCount, (i-j) + 1);
-                sum -= arr[j];
-                j++;
-            }
 
+        for(int element : arr){
+            sum += element;
+            while(sum >= K){
+                minCount = Math.min(minCount, (endIdx-startIdx) + 1);
+                sum -= arr[startIdx];
+                startIdx++;
+            }
+            endIdx++;
         }
         return minCount;
     }
