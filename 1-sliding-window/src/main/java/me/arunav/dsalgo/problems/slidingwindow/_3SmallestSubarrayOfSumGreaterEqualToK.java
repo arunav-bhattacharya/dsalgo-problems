@@ -1,5 +1,10 @@
 package me.arunav.dsalgo.problems.slidingwindow;
 
+/*
+ * Given an array of positive numbers and a positive number ‘S’, find the length of the smallest contiguous subarray
+ * whose sum is greater than or equal to ‘S’. Return 0, if no such subarray exists.
+ */
+
 public class _3SmallestSubarrayOfSumGreaterEqualToK {
 
     public static void main(String[] args) {
@@ -12,11 +17,11 @@ public class _3SmallestSubarrayOfSumGreaterEqualToK {
         int minCount = Integer.MAX_VALUE;
         int sum = 0;
         // Brute Force
-        for (int i=0; i< arr.length; i++){
-            for (int j=i; j< arr.length; j++){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
                 sum += arr[j];
-                if(sum >= K){
-                    minCount = Math.min(minCount, (j-i) + 1);
+                if (sum >= K) {
+                    minCount = Math.min(minCount, (j - i) + 1);
                     break;
                 }
             }
@@ -29,10 +34,10 @@ public class _3SmallestSubarrayOfSumGreaterEqualToK {
         int endIdx = 0;
         sum = 0;
 
-        for(int element : arr){
+        for (int element : arr) {
             sum += element;
-            while(sum >= K){
-                minCount = Math.min(minCount, (endIdx-startIdx) + 1);
+            while (sum >= K) {
+                minCount = Math.min(minCount, (endIdx - startIdx) + 1);
                 sum -= arr[startIdx];
                 startIdx++;
             }

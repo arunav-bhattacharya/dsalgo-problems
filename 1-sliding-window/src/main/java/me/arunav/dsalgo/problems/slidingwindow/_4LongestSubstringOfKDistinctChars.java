@@ -3,6 +3,10 @@ package me.arunav.dsalgo.problems.slidingwindow;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * Given a string, find the length of the longest substring in it with no more than K distinct characters.
+ */
+
 public class _4LongestSubstringOfKDistinctChars {
 
     public static void main(String[] args) {

@@ -1,5 +1,10 @@
 package me.arunav.dsalgo.problems.slidingwindow;
 
+/*
+ * Given an array of positive numbers and a positive number ‘k’, find the maximum average of any contiguous subarray of
+ * size ‘k’.
+ */
+
 public class _2MaxAvgSubarrayOfSizeK {
 
     public static void main(String[] args) {
@@ -10,16 +15,16 @@ public class _2MaxAvgSubarrayOfSizeK {
     }
 
     public static double findMaxAvgSubArray(int k, int[] arr) {
-        double maxAvg = - 10000.00;
+        double maxAvg = -10000.00;
         double sum = 0;
         int j = 0;
-        
+
         // Sliding Window Pattern
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
 
-            if (i >=  k - 1) {
-                maxAvg = Math.max(maxAvg, sum/k);
+            if (i >= k - 1) {
+                maxAvg = Math.max(maxAvg, sum / k);
                 sum = sum - arr[j];
                 j++;
             }
