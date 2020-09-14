@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="1-sliding-window" target="8" />
+      <module name="1-sliding-window" target="9" />
       <module name="dsalgo-problems" target="8" />
     </bytecodeTargetLevel>
   </component>

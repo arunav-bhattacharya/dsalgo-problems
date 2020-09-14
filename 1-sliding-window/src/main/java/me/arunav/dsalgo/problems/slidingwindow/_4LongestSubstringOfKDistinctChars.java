@@ -30,7 +30,7 @@ public class _4LongestSubstringOfKDistinctChars {
                 maxLength = Math.max(maxLength, endIdx - startIdx + 1);
             }
 
-            // While the  number of distinct characters (size of the map) >= K, then increment the sliding window
+            // While the  number of distinct characters (size of the map) > K, then increment the sliding window
             // starting index and also reduce the count of the chars in that index from the map
             while (map.size() > K) {
                 char startingCharInWindow = charArray[startIdx];
