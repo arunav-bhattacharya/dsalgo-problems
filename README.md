@@ -16,7 +16,7 @@
 - Things we iterate over sequentially
     - Contiguous sequence of elements
     - Strings, arrays, linked lists
-- Min, Max, Longest, Shortest, Contained
+- Looking for some sub-range like Min, Max, Longest, Shortest, Contained
     - Maybe we need to calculate something
     
 ### Some common problems        
@@ -30,34 +30,50 @@ If you observe closely, you will realize that to calculate the sum of a contiguo
 
 #### 2. [LC-Medium: 209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
-1. First, we will add-up elements from the beginning of the array until their sum becomes greater than or equal to `‘S’`.
-2. These elements will constitute our sliding window. We are asked to find the smallest such window having a sum greater than or equal to `‘S’`. We will remember the length of this window as the smallest window so far.
-3. After this, we will keep adding one element in the sliding window (i.e. slide the window ahead), in a stepwise fashion.
-4. In each step, we will also try to shrink the window from the beginning. We will shrink the window until the window’s sum is smaller than `‘S’` again. This is needed as we intend to find the smallest window. This shrinking will also happen in multiple steps; in each step we will do two things:
+- First, we will add-up elements from the beginning of the array until their sum becomes greater than or equal to `‘S’`.
+- These elements will constitute our sliding window. We are asked to find the smallest such window having a sum greater than or equal to `‘S’`. We will remember the length of this window as the smallest window so far.
+- After this, we will keep adding one element in the sliding window (i.e. slide the window ahead), in a stepwise fashion.
+- In each step, we will also try to shrink the window from the beginning. We will shrink the window until the window’s sum is smaller than `‘S’` again. This is needed as we intend to find the smallest window. This shrinking will also happen in multiple steps; in each step we will do two things:
     - Check if the current window length is the smallest so far, and if so, remember its length.
     - Subtract the first element of the window from the running sum to shrink the sliding window.
 
-#### 3. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters_](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
+#### 3. [LC-Medium: 904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
 
-1. Insert characters from the beginning of the string until we have `‘K’` distinct characters in a HashMap.
-2. These characters will constitute our sliding window. We are asked to find the longest such window having no more than `‘K’` distinct characters. We will remember the length of this window as the longest window so far.
-3. After this, we will keep adding one character in the sliding window (i.e. slide the window ahead), in a stepwise fashion.
-4. In each step, we will try to shrink the window from the beginning if the count of distinct characters in the HashMap is larger than `‘K’`. We will shrink the window until we have no more than `‘K’` distinct characters in the HashMap. This is needed as we intend to find the longest window.
-5. While shrinking, we’ll decrement the frequency of the character going out of the window and remove it from the HashMap if its frequency becomes zero.
-6. At the end of each step, we’ll check if the current window length is the longest so far, and if so, remember its length.
+#### 4. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters_](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 
-#### 4. [LC-Medium: 3. Longest Substring _Without Repeating Characters_](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- Insert characters from the beginning of the string until we have `‘K’` distinct characters in a HashMap.
+- These characters will constitute our sliding window. We are asked to find the longest such window having no more than `‘K’` distinct characters. We will remember the length of this window as the longest window so far.
+- After this, we will keep adding one character in the sliding window (i.e. slide the window ahead), in a stepwise fashion.
+- In each step, we will try to shrink the window from the beginning if the count of distinct characters in the HashMap is larger than `‘K’`. We will shrink the window until we have no more than `‘K’` distinct characters in the HashMap. This is needed as we intend to find the longest window.
+- While shrinking, we’ll decrement the frequency of the character going out of the window and remove it from the HashMap if its frequency becomes zero.
+- At the end of each step, we’ll check if the current window length is the longest so far, and if so, remember its length.
+
+#### 5. [LC-Medium: 3. Longest Substring _Without Repeating Characters_](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 - Trick is finding the starting Index in the Window. When a repeating character is found then - "the next character after the repeating character becomes the starting index, if that character is in the window, or else starting Window doesn't change because the character found is not part of the current window".
 
-#### 5. [LC-Medium: 424. Longest repeating Substring after _replacing k characters_](https://leetcode.com/problems/longest-repeating-character-replacement/)
+#### 6. [LC-Medium: 424. Longest repeating Substring after _replacing k characters_](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 - Find a window that has the maximum number of repeating characters and no other characters in it.
 - At any point of time if the number of repeating characters in the window is less than the max no. of replacable characters, then we need to move the starting index of the window.
 - [Explanation](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/91271/Java-12-lines-O(n)-sliding-window-solution-with-explanation)
 
-#### 6. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
+#### 7. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
 - We’ll iterate through the array to add one number at a time in the window. We’ll also keep track of the maximum number of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `‘k’` remaining 0s, we should shrink the window as we are not allowed to replace more than `‘k’` 0s.
 
-#### 7. [LC-Hard: 395. Longest Substring with _At Least K Repeating Characters_](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+#### 8. [LC-Hard: 30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+
+#### 9. [LC-Hard: 76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+#### 10. [LC-Medium: 438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+
+#### 11. [LC-Medium: 567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+
+#### 12. [LC-Hard: 395. Longest Substring with _At Least K Repeating Characters_](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+
+
+<br/>
+
+II. Two Pointers
+
