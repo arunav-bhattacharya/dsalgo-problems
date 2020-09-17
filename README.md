@@ -70,10 +70,25 @@ If you observe closely, you will realize that to calculate the sum of a contiguo
 
 #### 11. [LC-Medium: 567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
 
-#### 12. [LC-Hard: 395. Longest Substring with _At Least K Repeating Characters_](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+#### 12. [LC-Hard: 239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
+#### 13. [LC-Hard: 480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)
+
+#### 14. [LC-Medium: 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+
+#### 15. [LC-Hard: 727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/)
+
+#### 16. [LC-Hard: 1074. Number of Submatrices That Sum to Target](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/)
 
 <br/>
 
-II. Two Pointers
+## II. Two Pointers
+
+## III. Fast & Slow Pointers
+
+## IV. Merge Intervals
+
+## V. Cyclic Sort
+
+## VI. 
 
