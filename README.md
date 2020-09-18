@@ -90,5 +90,35 @@ If you observe closely, you will realize that to calculate the sum of a contiguo
 
 ## V. Cyclic Sort
 
-## VI. 
+## VI. Linked List
+
+## VII. Breadth First Search
+
+## VIII. Depth First Search
+
+## IX. Two Heaps
+
+## X. Subsets
+
+## XI. Binary Search
+
+## XII. Bitwise XOR
+
+## XIII. Top `K` elements
+
+## XIV. `K` way merge
+
+## XV. Dynamic Programming - 0/1 Knapsack
+
+## XVI. Dynamic Programming - Unbounded Knapsack
+
+## XVII. Dynamic Programming - Fibonacci Numbers
+
+## XVIII. Dynamic Programming - Palindromic Subsequence
+
+## XIX. Dynamic Programming - Longest Common Substring 
+
+## XX. Topological Sort (Graph)
+
+ 
 
