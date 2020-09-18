@@ -119,6 +119,5 @@ If you observe closely, you will realize that to calculate the sum of a contiguo
 ## XIX. Dynamic Programming - Longest Common Substring 
 
 ## XX. Topological Sort (Graph)
-
  
 
