@@ -1,16 +1,62 @@
 # Data Structure & Algorithm Patterns & Problems
 
-> Problems on Data Structure &amp; Algorithms
+> - **Resources**:
+>   - https://www.educative.io/courses/grokking-the-coding-interview
+>   - https://algo.monster/problems/stats
+>   - https://emre.me/
+>
+> - **Patterns**: (154)
+>  1. Sliding Window (11)
+>  2. Two Pointers (11)
+>  3. Fast & Slow pointers (7)
+>  4. Merge Intervals (7)
+>  5. Cyclic Sort (8)
+>  6. In-place Reversal of a LinkedList (5)
+>  7. Tree Breadth First Search (9)
+>  8. Tree Depth First Search (7)
+>  9. Two Heaps (4)
+>  10. Subsets (9)
+>  11. Modified Binary Search (10)
+>  12. Bitwise XOR (4)
+>  13. Top 'K' Elements (14)
+>  14. K-way merge (5)
+>  15. 0/1 Knapsack (DP) (6)
+>  16. Unbounded Knapsack (DP) (5)
+>  17. Fibonacci Numbers (DP) (6)
+>  18. Palindromic Subsequence (DP) (5)
+>  19. Longest Common Substring (DP) (13)
+>  20. Topological Sort (Graph) (7)
+>  21. Connected components (Graph) (1)
+>
+> - **Additional Patterns**:
+>   - Trie
+>   - Substring search
+>   - Union Find
+>   - Greedy
+>   - Divide & Conquer
+>   - Combinatorial DFS 
 
+    
 ## I. Sliding Window 
 
 ### Types of problems 
 
 - Fixed Length window
+    - Max Sum/Avg Subarray of Size K (643)
 - Dynamic Length window
+    - Smallest subarray of sum >= to some value S (209)
+    - Fruits into basket (904)
+    - Maximum Consecutive Ones (1004)
 - Dynamic Length window with Additional Data structure
+    - Longest substring length with no more than K distinct characters (340)
+    - Longest Substring Without Repeating Characters (3)
+    - Longest repeating Character Replacement (424)
 - String permutation
-
+    - Find All Anagrams in a String (438)
+    - Find if a string contains any Permutation of a pattern (567)
+    - Smallest substring that contains all the characters of a pattern (76)
+    - Word concatenation (30)
+    
 ### How to identify them ?
 
 - Things we iterate over sequentially
