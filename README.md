@@ -105,7 +105,8 @@ Similar to the previous problem
 
 - Find a window that has the maximum number of repeating characters and no other characters in it.
 - At any point of time if the number of repeating characters in the window is less than the max no. of replacable characters, then we need to move the starting index of the window.
-- [Explanation](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/91271/Java-12-lines-O(n)-sliding-window-solution-with-explanation)
+
+[Leetcode Solution](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/91271/Java-12-lines-O(n)-sliding-window-solution-with-explanation)
 
 #### 7. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
@@ -121,11 +122,21 @@ For a string to be a permutation of another string it must satisfy the following
 
 Based on these properties and using Sliding Window technique, we can solve this problem.
 
+[Leetcode Solution](https://leetcode.com/problems/permutation-in-string/discuss/859923/Simple-Java-O(N)-solution-using-Hashmap-with-explanation)
+
 #### 9. [LC-Medium: 438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 
 Similar to the previous problem.
 
 #### 10. [LC-Hard: 76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+- First search for the window that satisfies the substring in the main string by increasing the end pointer.
+- Once the search string is found, minimize the window by moving the start pointer until the window does not satisfy the substring.
+- Do this until end of string, and calculate and hold the minimum string on the way.
+
+[Video Explanation](https://www.youtube.com/watch?v=eS6PZLjoaq8)
+
+[Leetcode Solution](https://leetcode.com/problems/minimum-window-substring/discuss/861236/Simple-Java-O(N)-hashmap-%2B-sliding-window-solution-with-explanation-11ms)
 
 #### 11. [LC-Hard: 30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
