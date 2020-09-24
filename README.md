@@ -140,6 +140,11 @@ Similar to the previous problem.
 
 #### 11. [LC-Hard: 30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
+- Search for each word in given string in every substring window of length = sum of length of concatenated words from words[].
+- Whenever all the words are found in the substring window, then we store the starting index of that substring window.
+
+[Leetcode Solution](https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/862010/Simple-Java-Solution-with-explanation-using-2-HashMaps-O(m*N)-(m-no.-of-words-in-words))
+
 <br/>
 
 ### Practice Problems:
