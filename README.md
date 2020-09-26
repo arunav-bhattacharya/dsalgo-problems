@@ -3,6 +3,7 @@
 > - **Resources**:
 >   - https://leetcode.com/problemset/all/
 >   - https://www.educative.io/courses/grokking-the-coding-interview
+>   - https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 >   - https://algo.monster/problems/stats
 >   - https://emre.me/
 >
@@ -40,7 +41,7 @@
     
 ## I. Sliding Window 
 
-### Types of problems 
+### Types 
 
 - Fixed Length window
     - Max Sum/Avg Subarray of Size K (643)
@@ -66,7 +67,7 @@
 - Looking for some sub-range like Min, Max, Longest, Shortest, Contained
     - Maybe we need to calculate something
     
-### Some common problems        
+### Common problems        
     
 #### 1. [LC-Easy: 643. Maximum _Average_ Subarray](https://leetcode.com/problems/maximum-average-subarray-i/)
 
@@ -160,6 +161,66 @@ Similar to the previous problem.
 
 ## II. Two Pointers
 
+Two pointers is really an easy and effective technique which is typically used for searching pairs in a **sorted array**.
+
+2 types of 2-pointer technique: 
+- One slow-runner and the other fast-runner.
+- One pointer starts from the beginning while the other pointer starts from the end.
+
+### How to identify them ?
+
+- It will feature problems where you deal with sorted arrays (or Linked Lists) and need to find a set of elements that fulfill certain constraints
+- The set of elements in the array is a pair, a triplet, or even a subarray
+
+### Common Problems:
+
+#### 1. [LC-Easy: 167. Pair with target sum in a sorted Array](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+
+- We'll use 2 pointers - start and end and iterate through the array until end pointer surpasses front pointer or we find the target sum. 
+- If the sum is equal to the sum of the item in the front and end, then we return the 2 indices.
+- If the sum is greater than the sum of the item in the front and end, then we decrement the end pointer.
+- If the sum is lesser than the sum of the item in the front and end, then we increment the start pointer.
+
+#### 2. [LC-Easy: 26. Remove duplicates from sorted array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+
+- Iterate over the sorted array and check for duplicates in the previous position. 
+- If duplicate found we simply increment the iterating pointer. 
+- Whenever the current item is not equal to the previous unique item, we increment a unique counter that can be used to maintain the unique items together in the array.
+
+#### 3. [LC-Easy: 977. Squaring a sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+
+- Since square of negative values gives a positive value, so we'll use this concept to evaluate the higher of the 2 squared values in the sorted array and accordingly place it at the end. 
+
+#### 4. [LC-Medium: 15. 3Sum](https://leetcode.com/problems/3sum/)
+
+The algo to solve the problem - 
+1. First sort the input array.
+2. Iterate over each item on the sorted array and perform 2 sum on the items right of the current item. The sum of the 2 values should be equal to the current item. We can use the 2-pointer technique to find the 2-sum.
+3. Since the problem says, we cannot have a duplicate triplet so we need to ensure after every match that the items right of the left pointer, and the items left to the right pointer does not have the same value as the current left and current right items respectively. If there are any, we'll skip until we find a value that doesn't match or the right pointer surpasses the left pointer.
+4. A similar check needs to be done for the current item which is being iterated in the outer loop. The item that is being processed should not be same as the previous item in the sorted array, then we might end up adding duplicate triplets in the final result.
+
+[Leetcode Solution](https://leetcode.com/problems/3sum/discuss/864537/Simple-Java-On(N2)-solution-with-explanation)
+
+#### 5. [LC-Medium: 15. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+
+Similar to the previous one
+
+#### 6. [LC-Medium: 259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)
+
+- Similar approach as 3 Sum problem.
+- Trick is to calculate the count. If the largest element from the rear when included in the sum makes the count less than the target, then all the elements from the front pointer to the rear pointer will sum up less than the target sum.
+
+#### 7. [LC-Medium: 713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/submissions/)
+
+- Problem is based on the concept of dynamic sliding window, where we move both the starting and ending index to match a particular condition.
+
+- We maintain a running product by multiplying each item in the array to the running product. If at any point of time the product goes beyond K, we divide the running product with the item in the starting index and increment the starting index, so that it is out of the window. We repeat this until we get a valid window or end of array.
+
+- Whenever we find a valid window, the possible set of new subarrays possible in that window is the length of the window.
+
+[Leetcode Solution](https://leetcode.com/problems/subarray-product-less-than-k/discuss/108861/JavaC%2B%2B-Clean-Code-with-Explanation)
+
+        
 ## III. Fast & Slow Pointers
 
 ## IV. Merge Intervals
@@ -195,5 +256,11 @@ Similar to the previous problem.
 ## XIX. Dynamic Programming - Longest Common Substring 
 
 ## XX. Topological Sort (Graph)
+
+## XXI. Connected Components (Graph)
+
+## L. Miscellaneous
+
+1. [LC-Medium: 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
  
 
