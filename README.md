@@ -98,6 +98,8 @@ Similar to the previous problem
 - While shrinking, we’ll decrement the frequency of the character going out of the window and remove it from the HashMap if its frequency becomes zero.
 - At the end of each step, we’ll check if the current window length is the longest so far, and if so, remember its length.
 
+[Leetcode Solution](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/submissions/)
+
 #### 5. [LC-Medium: 3. Longest Substring _Without Repeating Characters_](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 - Trick is finding the starting Index in the Window. When a repeating character is found then - "the next character after the repeating character becomes the starting index, if that character is in the window, or else starting Window doesn't change because the character found is not part of the current window".
