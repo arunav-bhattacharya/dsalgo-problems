@@ -220,6 +220,32 @@ Similar to the previous one
 
 [Leetcode Solution](https://leetcode.com/problems/subarray-product-less-than-k/discuss/108861/JavaC%2B%2B-Clean-Code-with-Explanation)
 
+#### 8. [LC-Medium: 75. Sort Colors (Dutch National Flag)](https://leetcode.com/problems/sort-colors/)
+
+[Leetcode Solution](https://leetcode.com/submissions/detail/401622683/)
+
+#### 9. [LC-Medium: 4. 4Sum](https://leetcode.com/problems/4sum/)
+
+Similar to 3Sum. Iterate through every element in the array and solve for 3Sum.
+
+#### 10. [LC-Easy: 844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)
+
+#### 11. [LC-Easy: 581. Shortest Unsorted Continuous Subarray (Minimum Window Sort)](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
+
+Easy but tricky problem.
+
+- From the beginning and end of the array, find the first elements that are out of the sorting order. The two elements will be our candidate subarray.
+- Find the maximum and minimum of this subarray.
+- Extend the subarray from beginning to include any number which is bigger than the minimum of the subarray.
+- Similarly, extend the subarray from the end to include any number which is smaller than the maximum of the subarray.
+
+### Practice Problems
+
+1. [LC-Medium: 763. Partition Labels](https://leetcode.com/problems/partition-labels/)
+2. [LC-Hard: 42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+3. [LC-Medium: 11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+4. [LC-Easy: 88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+5. [LC-Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
         
 ## III. Fast & Slow Pointers
 
