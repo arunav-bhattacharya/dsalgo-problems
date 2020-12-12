@@ -5,7 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class _11WordConcat {
+public class _11WordConcat<T extends Integer> {
+
+    public T fun(){
+        return (T) Integer.valueOf(1);
+    }
 
     public static void main(String[] args) {
         System.out.println(findSubstring("barfoothefoobarman", new String[]{"bar", "foo"}));

@@ -85,11 +85,7 @@ If you observe closely, you will realize that to calculate the sum of a contiguo
     - Check if the current window length is the smallest so far, and if so, remember its length.
     - Subtract the first element of the window from the running sum to shrink the sliding window.
 
-#### 3. [LC-Medium: 904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
-
-Similar to the previous problem
-
-#### 4. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters_](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
+#### 3. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters_](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 
 - Insert characters from the beginning of the string until we have `‘K’` distinct characters in a HashMap.
 - These characters will constitute our sliding window. We are asked to find the longest such window having no more than `‘K’` distinct characters. We will remember the length of this window as the longest window so far.
@@ -99,6 +95,10 @@ Similar to the previous problem
 - At the end of each step, we’ll check if the current window length is the longest so far, and if so, remember its length.
 
 [Leetcode Solution](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/submissions/)
+
+#### 4. [LC-Medium: 904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
+
+Similar to the previous problem
 
 #### 5. [LC-Medium: 3. Longest Substring _Without Repeating Characters_](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
