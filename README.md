@@ -1,53 +1,42 @@
 # Data Structure & Algorithm Patterns & Problems
-
-> - **Resources**:
->   - https://leetcode.com/problemset/all/
->   - https://www.educative.io/courses/grokking-the-coding-interview
->   - https://www.educative.io/courses/algorithms-coding-interviews-java
->   - https://www.educative.io/courses/recursion-for-coding-interviews-in-java      
->   - https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews
->   - https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
->   - https://algo.monster/problems/stats
->   - https://emre.me/
->   - https://backtobackswe.com/platform/content
 >
-> - **Patterns**: (115)
-> 1. Sliding Window (11)
-> 2. Two Pointers (11)
-> 3. Fast & Slow pointers (7)
-> 4. Merge Intervals (7)
-> 5. Cyclic Sort (8)
-> 6. In-place Reversal of a LinkedList (5)
-> 7. Tree Breadth First Search (9)
-> 8. Tree Depth First Search (7)
-> 9. Two Heaps (4)
-> 10. Subsets (9)
-> 11. Modified Binary Search (10)
-> 12. Top 'K' Elements (14)
-> 13. K-way merge (5)
-> 14. Topological Sort (Graph) (7)
-> 15. Connected components (Graph) (1)
+> - **[Patterns](https://www.educative.io/courses/grokking-the-coding-interview) - 115**
+> 1. [Sliding Window](https://www.educative.io/courses/grokking-the-coding-interview/7D5NNZWQ8Wr) (11)
+> 2. [Two Pointers](https://www.educative.io/courses/grokking-the-coding-interview/xlK78P3Xl7E) (11)
+> 3. [Fast & Slow pointers](https://www.educative.io/courses/grokking-the-coding-interview/g76PJVmL5PZ) (7)
+> 4. [Merge Intervals](https://www.educative.io/courses/grokking-the-coding-interview/3YVYvogqXpA) (7)
+> 5. [Cyclic Sort](https://www.educative.io/courses/grokking-the-coding-interview/YVjXo6J9xN9) (8)
+> 6. [In-place Reversal of a LinkedList](https://www.educative.io/courses/grokking-the-coding-interview/JE8vzXroA5P) (5)
+> 7. [Tree - Breadth First Search](https://www.educative.io/courses/grokking-the-coding-interview/qARvkz138r3) (9)
+> 8. [Tree - Depth First Search](https://www.educative.io/courses/grokking-the-coding-interview/q2GxL8GWB6y) (7)
+> 9. [Two Heaps](https://www.educative.io/courses/grokking-the-coding-interview/xlm8k0ZND93) (4)
+> 10. [Subsets](https://www.educative.io/courses/grokking-the-coding-interview/R87WmWYrELz) (9)
+> 11. [Modified Binary Search](https://www.educative.io/courses/grokking-the-coding-interview/JQJOO357VDo) (10)
+> 12. [Top 'K' Elements](https://www.educative.io/courses/grokking-the-coding-interview/7XBApZGoEvj) (14)
+> 13. [K-way merge](https://www.educative.io/courses/grokking-the-coding-interview/xlGGNlQr8jE) (5)
+> 14. [Topological Sort](https://www.educative.io/courses/grokking-the-coding-interview/myNkP2AQw19) (7)
+> 15. [Connected components](https://leetcode.com/problems/critical-connections-in-a-network/discuss/453797/Simple-Java-Solution-using-DFS-(Tarjan's-Algo)-%3A-Efficiency-Time-20-and-Space-100) (1)
 >
-> - **Dynamic Programming - 35**
-> 1. 0/1 Knapsack (6)
-> 2. Unbounded Knapsack (5)
-> 3. Fibonacci Numbers (6)
-> 4. Palindromic Subsequence (5)
-> 5. Longest Common Substring (13)
+> - **[Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) - 35**
+> 1. [0/1 Knapsack](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RM1BDv71V60) (6)
+> 2. [Unbounded Knapsack](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/qV6RXWME4D3) (5)
+> 3. [Fibonacci Numbers](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/gx6jmzrMwgZ) (6)
+> 4. [Palindromic Subsequence](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RMk1D1DY1PL) (5)
+> 5. [Longest Common Substring](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RMkk7NwE44R) (13)
 >    
-> - **Algorithms - 43**
-> 1. Sorting & Searching (5)
-> 2. Greedy Algorithms (9)
-> 3. Divide & Conquer (11)
-> 4. Graph Algorithms (3)
-> 5. Substring search (Knutt-Morris & Rabin Karp) (5)
-> 6. Recursion & Backtracking (10)
+> - **[Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java) - 46**
+> 1. [Sorting & Searching](https://www.educative.io/courses/algorithms-coding-interviews-java/B62q79Pn2AJ) (5)
+> 2. [Greedy Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java/3j1R50KnNjQ) (9)
+> 3. [Divide & Conquer](https://www.educative.io/courses/algorithms-coding-interviews-java/YQVkrJGZw0p) (11)
+> 4. [Graph Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java/xVVXPWoRjn3) (3)
+> 5. [Substring search - KMP](https://leetcode.com/list?selectedList=xi6wvsqe) (4)
+> 6. [Substring search - Rabin Karp](https://leetcode.com/list?selectedList=xi6fk8g2) (4)
+> 7. [Recursion & Backtracking](https://leetcode.com/list?selectedList=xixq7rvd) (15)
 > 
 > - **Additional Patterns - 15**
-> 1. Trie (5)
-> 2. Union Find (3)
-> 3. Combinatorial DFS (3)
-> 4. Bitwise XOR (4)
+> 1. [Trie](https://leetcode.com/tag/trie/) (5)
+> 2. [Union Find](https://leetcode.com/tag/union-find/) (3)
+> 3. [Bitwise XOR](https://www.educative.io/courses/grokking-the-coding-interview/RLPGq6Vx0YY) (4)
 > 
     
 ## I. Sliding Window 
@@ -303,7 +292,7 @@ Easy but tricky problem.
 1. [LC-Medium: 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
 
-> - **Revise from Back2BackSWE - 135**
+> - **Revise from [Back2BackSWE](https://backtobackswe.com/platform/content) - 135**
 > 1. Arrays (7)
 > 2. Strings (9)
 > 3. Linked List (12)
@@ -312,9 +301,21 @@ Easy but tricky problem.
 > 6. Special Trees (3)
 > 7. Heaps (6)
 > 8. Searching (6)
-> 9. Hashtables (6)
+> 9. Hash-Table (6)
 > 10. Sorting (10)
 > 11. Recursion & Backtracking (13)
 > 12. Dynamic Programming (17)
 > 13. Greedy Algorithms (10)
 > 14. Graphs (14)
+
+
+> - **Resources**:
+>   - https://leetcode.com/problemset/all/
+>   - https://www.educative.io/courses/grokking-the-coding-interview
+>   - https://www.educative.io/courses/algorithms-coding-interviews-java
+>   - https://www.educative.io/courses/recursion-for-coding-interviews-in-java
+>   - https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews
+>   - https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
+>   - https://algo.monster/problems/stats
+>   - https://emre.me/
+>   - https://backtobackswe.com/platform/content
