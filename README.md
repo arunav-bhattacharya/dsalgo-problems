@@ -38,8 +38,12 @@
 > 2. [Union Find](https://leetcode.com/tag/union-find/) (3)
 > 3. [Bitwise XOR](https://www.educative.io/courses/grokking-the-coding-interview/RLPGq6Vx0YY) (4)
 > 
-    
-## I. Sliding Window 
+
+<br/>
+
+# [Patterns](https://www.educative.io/courses/grokking-the-coding-interview)
+
+## 1. Sliding Window 
 
 ### Types 
 
@@ -161,7 +165,7 @@ Similar to the previous problem.
 
 <br/>
 
-## II. Two Pointers
+## 2. Two Pointers
 
 Two pointers is really an easy and effective technique which is typically used for searching pairs in a **sorted array**.
 
@@ -248,49 +252,111 @@ Easy but tricky problem.
 3. [LC-Medium: 11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 4. [LC-Easy: 88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 5. [LC-Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
-        
-## III. Fast & Slow Pointers
 
-## IV. Merge Intervals
+<br/>
 
-## V. Cyclic Sort
+## 3. Fast & Slow Pointers
 
-## VI. Linked List
+<br/>
 
-## VII. Breadth First Search
+## 4. Merge Intervals
 
-## VIII. Depth First Search
+<br/>
 
-## IX. Two Heaps
+## 5. Cyclic Sort
 
-## X. Subsets
+<br/>
 
-## XI. Binary Search
+## 6. Linked List
 
-## XII. Bitwise XOR
+<br/>
 
-## XIII. Top `K` elements
+## 7. Breadth First Search
 
-## XIV. `K` way merge
+<br/>
 
-## XV. Dynamic Programming - 0/1 Knapsack
+## 8. Depth First Search
 
-## XVI. Dynamic Programming - Unbounded Knapsack
+<br/>
 
-## XVII. Dynamic Programming - Fibonacci Numbers
+## 9. Two Heaps
 
-## XVIII. Dynamic Programming - Palindromic Subsequence
+<br/>
 
-## XIX. Dynamic Programming - Longest Common Substring 
+## 10. Subsets
 
-## XX. Topological Sort (Graph)
+<br/>
 
-## XXI. Connected Components (Graph)
+## 11. Binary Search
 
-## L. Miscellaneous
+<br/>
+
+## 12. Top `K` elements
+
+<br/>
+
+## 13. `K` way merge
+
+<br/>
+
+## 14. Topological Sort (Graph)
+
+<br/>
+
+## 15. Connected Components (Graph)
+
+<br/>
+<br/>
+
+# [Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) - 35**
+
+## 1. 0/1 Knapsack
+<br/>
+
+## 2. Unbounded Knapsack
+<br/>
+
+## 3. Fibonacci Numbers
+<br/>
+
+## 4. Palindromic Subsequence
+<br/>
+
+## 5. Longest Common Substring 
+
+<br/>
+<br/>
+
+# [Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java) - 46**
+
+## 1. [Sorting & Searching](https://www.educative.io/courses/algorithms-coding-interviews-java/B62q79Pn2AJ) (5)
+<br/>
+
+## 2. [Greedy Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java/3j1R50KnNjQ) (9)
+<br/>
+
+## 3. [Divide & Conquer](https://www.educative.io/courses/algorithms-coding-interviews-java/YQVkrJGZw0p) (11)
+<br/>
+
+## 4. [Graph Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java/xVVXPWoRjn3) (3)
+<br/>
+
+## 5. [Substring search - KMP](https://leetcode.com/list?selectedList=xi6wvsqe) (4)
+<br/>
+
+## 6. [Substring search - Rabin Karp](https://leetcode.com/list?selectedList=xi6fk8g2) (4)
+<br/>
+
+## 7. [Recursion & Backtracking](https://leetcode.com/list?selectedList=xixq7rvd) (15)
+<br/>
+<br/>
+
+# Miscellaneous
 
 1. [LC-Medium: 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
-
+   
+<br/>
+<br/>
 
 > - **Revise from [Back2BackSWE](https://backtobackswe.com/platform/content) - 135**
 > 1. Arrays (7)
