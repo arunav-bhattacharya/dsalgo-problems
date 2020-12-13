@@ -3,6 +3,10 @@
 > - **Resources**:
 >   - https://leetcode.com/problemset/all/
 >   - https://www.educative.io/courses/grokking-the-coding-interview
+>   - https://www.educative.io/courses/algorithms-coding-interviews-java
+      > - https://www.educative.io/courses/recursion-for-coding-interviews-in-java
+      > - https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews
+      > 
 >   - https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 >   - https://algo.monster/problems/stats
 >   - https://emre.me/
@@ -29,6 +33,7 @@
 >   19. Longest Common Substring (DP) (13)
 >   20. Topological Sort (Graph) (7)
 >   21. Connected components (Graph) (1)
+>   22. Recursion & Backtracking ()
 >
 > - **Additional Patterns**:
 >   - Trie
@@ -90,7 +95,7 @@ If you observe closely, you will realize that to calculate the sum of a contiguo
 - Insert characters from the beginning of the string until we have `‘K’` distinct characters in a HashMap.
 - These characters will constitute our sliding window. We are asked to find the longest such window having no more than `‘K’` distinct characters. We will remember the length of this window as the longest window so far.
 - After this, we will keep adding one character in the sliding window (i.e. slide the window ahead), in a stepwise fashion.
-- In each step, we will try to shrink the window from the beginning if the count of distinct characters in the HashMap is larger than `‘K’`. We will shrink the window until we have no more than `‘K’` distinct characters in the HashMap. This is needed as we intend to find the longest window.
+- In each step, we will try to shrink the window from the beginning if the count of distinct characters in the HashMap is larger than `‘K’`. We will shrink the window from the beginning until we have no more than `‘K’` distinct characters in the HashMap. This is needed as we intend to find the longest window.
 - While shrinking, we’ll decrement the frequency of the character going out of the window and remove it from the HashMap if its frequency becomes zero.
 - At the end of each step, we’ll check if the current window length is the longest so far, and if so, remember its length.
 
