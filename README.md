@@ -4,14 +4,14 @@
 >   - https://leetcode.com/problemset/all/
 >   - https://www.educative.io/courses/grokking-the-coding-interview
 >   - https://www.educative.io/courses/algorithms-coding-interviews-java
-      > - https://www.educative.io/courses/recursion-for-coding-interviews-in-java
-      > - https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews
-      > 
+>   - https://www.educative.io/courses/recursion-for-coding-interviews-in-java      
+>   - https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews
 >   - https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 >   - https://algo.monster/problems/stats
 >   - https://emre.me/
+>   - https://backtobackswe.com/platform/content
 >
-> - **Patterns**: (154)
+> - **Patterns**: (115)
 >   1. Sliding Window (11)
 >   2. Two Pointers (11)
 >   3. Fast & Slow pointers (7)
@@ -23,26 +23,32 @@
 >   9. Two Heaps (4)
 >   10. Subsets (9)
 >   11. Modified Binary Search (10)
->   12. Bitwise XOR (4)
->   13. Top 'K' Elements (14)
->   14. K-way merge (5)
->   15. 0/1 Knapsack (DP) (6)
->   16. Unbounded Knapsack (DP) (5)
->   17. Fibonacci Numbers (DP) (6)
->   18. Palindromic Subsequence (DP) (5)
->   19. Longest Common Substring (DP) (13)
->   20. Topological Sort (Graph) (7)
->   21. Connected components (Graph) (1)
->   22. Recursion & Backtracking ()
+>   12. Top 'K' Elements (14)
+>   13. K-way merge (5)
+>   14. Topological Sort (Graph) (7)
+>   15. Connected components (Graph) (1)
 >
-> - **Additional Patterns**:
->   - Trie
->   - Substring search
->   - Union Find
->   - Greedy
->   - Divide & Conquer
->   - Combinatorial DFS 
-
+> - **Dynamic Programming - 35**
+>   1. 0/1 Knapsack (6)
+>   2. Unbounded Knapsack (5)
+>   3. Fibonacci Numbers (6)
+>   4. Palindromic Subsequence (5)
+>   5. Longest Common Substring (13)
+>    
+> - **Algorithms - 45**
+>   1. Sorting & Searching (5)
+>   2. Greedy Algorithms (9)
+>   3. Divide & Conquer (11)
+>   4. Graph Algorithms (3)
+>   5. Substring search (Knutt-Morris & Rabin Karp) (5)
+>   6. Recursion & Backtracking (10)
+> 
+> - **Additional Patterns - 15**
+>   1. Trie (5)
+>   2. Union Find (3)
+>   3. Combinatorial DFS (3)
+>   4. Bitwise XOR (4)
+> 
     
 ## I. Sliding Window 
 
@@ -295,5 +301,20 @@ Easy but tricky problem.
 ## L. Miscellaneous
 
 1. [LC-Medium: 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
- 
 
+
+> - **Revise from Back2BackSWE - 135**
+    >   1. Arrays (7)
+>   2. Strings (9)
+>   3. Linked List (12)
+>   4. Stacks & Queues (7)
+>   5. Trees (15)
+>   6. Special Trees (3)
+>   7. Heaps (6)
+>   8. Searching (6)
+>   9. Hashtables (6)
+>   10. Sorting (10)
+>   11. Recursion & Backtracking (13)
+>   12. Dynamic Programming (17)
+>   13. Greedy Algorithms (10)
+>   14. Graphs (14)
