@@ -1,6 +1,6 @@
 # Data Structure & Algorithm Patterns & Problems
 >
-> - **[Patterns](https://www.educative.io/courses/grokking-the-coding-interview) - 115**
+> ## **[Patterns](https://www.educative.io/courses/grokking-the-coding-interview) - 115**
 > 1. [Sliding Window](https://www.educative.io/courses/grokking-the-coding-interview/7D5NNZWQ8Wr) (11)
 > 2. [Two Pointers](https://www.educative.io/courses/grokking-the-coding-interview/xlK78P3Xl7E) (11)
 > 3. [Fast & Slow pointers](https://www.educative.io/courses/grokking-the-coding-interview/g76PJVmL5PZ) (7)
@@ -17,14 +17,14 @@
 > 14. [Topological Sort](https://www.educative.io/courses/grokking-the-coding-interview/myNkP2AQw19) (7)
 > 15. [Connected components](https://leetcode.com/problems/critical-connections-in-a-network/discuss/453797/Simple-Java-Solution-using-DFS-(Tarjan's-Algo)-%3A-Efficiency-Time-20-and-Space-100) (1)
 >
-> - **[Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) - 35**
+> ## **[Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) - 35**
 > 1. [0/1 Knapsack](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RM1BDv71V60) (6)
 > 2. [Unbounded Knapsack](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/qV6RXWME4D3) (5)
 > 3. [Fibonacci Numbers](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/gx6jmzrMwgZ) (6)
 > 4. [Palindromic Subsequence](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RMk1D1DY1PL) (5)
 > 5. [Longest Common Substring](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/RMkk7NwE44R) (13)
 >    
-> - **[Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java) - 46**
+> ## **[Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java) - 46**
 > 1. [Sorting & Searching](https://www.educative.io/courses/algorithms-coding-interviews-java/B62q79Pn2AJ) (5)
 > 2. [Greedy Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java/3j1R50KnNjQ) (9)
 > 3. [Divide & Conquer](https://www.educative.io/courses/algorithms-coding-interviews-java/YQVkrJGZw0p) (11)
@@ -33,7 +33,7 @@
 > 6. [Substring search - Rabin Karp](https://leetcode.com/list?selectedList=xi6fk8g2) (4)
 > 7. [Recursion & Backtracking](https://leetcode.com/list?selectedList=xixq7rvd) (15)
 > 
-> - **Additional Patterns - 15**
+> ## **Additional Patterns - 15**
 > 1. [Trie](https://leetcode.com/tag/trie/) (5)
 > 2. [Union Find](https://leetcode.com/tag/union-find/) (3)
 > 3. [Bitwise XOR](https://www.educative.io/courses/grokking-the-coding-interview/RLPGq6Vx0YY) (4)
@@ -308,7 +308,7 @@ Easy but tricky problem.
 <br/>
 <br/>
 
-# [Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) - 35**
+# [Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)
 
 ## 1. 0/1 Knapsack
 <br/>
@@ -327,27 +327,27 @@ Easy but tricky problem.
 <br/>
 <br/>
 
-# [Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java) - 46**
+# [Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java)
 
-## 1. [Sorting & Searching](https://www.educative.io/courses/algorithms-coding-interviews-java/B62q79Pn2AJ) (5)
+## 1. Sorting & Searching
 <br/>
 
-## 2. [Greedy Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java/3j1R50KnNjQ) (9)
+## 2. Greedy Algorithms
 <br/>
 
-## 3. [Divide & Conquer](https://www.educative.io/courses/algorithms-coding-interviews-java/YQVkrJGZw0p) (11)
+## 3. Divide & Conquer
 <br/>
 
-## 4. [Graph Algorithms](https://www.educative.io/courses/algorithms-coding-interviews-java/xVVXPWoRjn3) (3)
+## 4. Graph Algorithms
 <br/>
 
-## 5. [Substring search - KMP](https://leetcode.com/list?selectedList=xi6wvsqe) (4)
+## 5. Substring search - KMP
 <br/>
 
-## 6. [Substring search - Rabin Karp](https://leetcode.com/list?selectedList=xi6fk8g2) (4)
+## 6. Substring search - Rabin Karp
 <br/>
 
-## 7. [Recursion & Backtracking](https://leetcode.com/list?selectedList=xixq7rvd) (15)
+## 7. Recursion & Backtracking
 <br/>
 <br/>
 
@@ -358,7 +358,7 @@ Easy but tricky problem.
 <br/>
 <br/>
 
-> - **Revise from [Back2BackSWE](https://backtobackswe.com/platform/content) - 135**
+> ## Revise from [Back2BackSWE](https://backtobackswe.com/platform/content) - 135
 > 1. Arrays (7)
 > 2. Strings (9)
 > 3. Linked List (12)
@@ -374,8 +374,10 @@ Easy but tricky problem.
 > 13. Greedy Algorithms (10)
 > 14. Graphs (14)
 
+<br/>
+<br/>
 
-> - **Resources**:
+> ## Resources:
 >   - https://leetcode.com/problemset/all/
 >   - https://www.educative.io/courses/grokking-the-coding-interview
 >   - https://www.educative.io/courses/algorithms-coding-interviews-java
