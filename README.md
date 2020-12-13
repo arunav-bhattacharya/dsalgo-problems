@@ -1,6 +1,6 @@
 # Data Structure & Algorithm Patterns & Problems
 >
-> ## **[Patterns](https://www.educative.io/courses/grokking-the-coding-interview) - 115**
+> ## **[Common Patterns](https://www.educative.io/courses/grokking-the-coding-interview) - 115**
 > 1. [Sliding Window](https://www.educative.io/courses/grokking-the-coding-interview/7D5NNZWQ8Wr) (11)
 > 2. [Two Pointers](https://www.educative.io/courses/grokking-the-coding-interview/xlK78P3Xl7E) (11)
 > 3. [Fast & Slow pointers](https://www.educative.io/courses/grokking-the-coding-interview/g76PJVmL5PZ) (7)
@@ -41,7 +41,7 @@
 
 <br/>
 
-# [Patterns](https://www.educative.io/courses/grokking-the-coding-interview)
+# [Common Patterns](https://www.educative.io/courses/grokking-the-coding-interview)
 
 ## 1. Sliding Window 
 
