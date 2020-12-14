@@ -110,8 +110,12 @@ Similar to the previous problem
 
 #### 6. [LC-Medium: 424. Longest repeating Substring after _replacing k characters_](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
-- Find a window that has the maximum number of repeating characters and no other characters in it.
-- At any point of time if the number of repeating characters in the window is less than the max no. of replacable characters, then we need to move the starting index of the window.
+- The idea here is to find a window that satisfies the condition -
+_count of most repeatable character + no. of allowed replacements <= length of the window_
+- Since the no. of allowed replacements is fixed, then the window size is directly proportional to the count of the most repeating character.
+- Initially the window keeps growing from the end, until all the allowed replacements are added up in the window until it reaches the max size.
+- The moment the condition is not satisfied (i.e., _count of most repeatable character + no. of allowed replacements > size of the window_), then we need to slide the window (not shrink) to the right and decrement the frequency of the character that is moved out of the window.
+- If the next character coming in is the most repeating character, then the window grows or else it simply slides again.
 
 [Leetcode Solution](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/971458/O(N)-%2B-Sliding-Window-%2B-Simple-with-explanation-%2B-Kotlin-solution)
 
