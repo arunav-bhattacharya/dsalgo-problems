@@ -113,7 +113,7 @@ Similar to the previous problem
 - Find a window that has the maximum number of repeating characters and no other characters in it.
 - At any point of time if the number of repeating characters in the window is less than the max no. of replacable characters, then we need to move the starting index of the window.
 
-[Leetcode Solution](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/91271/Java-12-lines-O(n)-sliding-window-solution-with-explanation)
+[Leetcode Solution](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/971458/O(N)-%2B-Sliding-Window-%2B-Simple-with-explanation-%2B-Kotlin-solution)
 
 #### 7. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
