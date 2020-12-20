@@ -74,7 +74,7 @@
 
 ### Common problems
 
-#### 1. [LC-Easy: 643. Maximum _Average_ Subarray](https://leetcode.com/problems/maximum-average-subarray-i/)
+#### 1. [LC-Easy: 643. Maximum Average Subarray](https://leetcode.com/problems/maximum-average-subarray-i/)
 
 If you observe closely, you will realize that to calculate the sum of a contiguous subarray we can utilize the sum of
 the previous subarray. For this, consider each subarray as a Sliding Window of size `‘k’`. To calculate the sum of the
@@ -97,8 +97,7 @@ the new position of the sliding window, we need to do two things:
     - Check if the current window length is the smallest so far, and if so, remember its length.
     - Subtract the first element of the window from the running sum to shrink the sliding window.
 
-#### 3. [LC-Hard: 340. Longest Substring with _At Most K Distinct
-Characters_](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
+#### 3. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 
 - Insert characters from the beginning of the string until we have `‘K’` distinct characters in a HashMap.
 - These characters will constitute our sliding window. We are asked to find the longest such window having no more
@@ -119,15 +118,13 @@ Characters_](https://leetcode.com/problems/longest-substring-with-at-most-k-dist
 
 Similar to the previous problem
 
-#### 5. [LC-Medium: 3. Longest Substring _Without Repeating
-Characters_](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+#### 5. [LC-Medium: 3. Longest Substring _Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 - Trick is finding the starting Index in the Window. When a repeating character is found then - "the next character
   after the repeating character becomes the starting index, if that character is in the window, or else starting Window
   doesn't change because the character found is not part of the current window".
 
-#### 6. [LC-Medium: 424. Longest repeating Substring after _replacing k
-characters_](https://leetcode.com/problems/longest-repeating-character-replacement/)
+#### 6. [LC-Medium: 424. Longest repeating Substring after replacing k characters](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 - The idea here is to find a window that satisfies the condition -
   _count of most repeatable character + no. of allowed replacements <= length of the window_
@@ -201,8 +198,7 @@ Similar to the previous problem.
 
 ## 2. Two Pointers
 
-Two pointers is really an easy and effective technique which is typically used for searching pairs in a **sorted array**
-.
+Two pointers is really an easy and effective technique which is typically used for searching pairs in a **sorted array**.
 
 2 types of 2-pointer technique:
 
@@ -211,8 +207,7 @@ Two pointers is really an easy and effective technique which is typically used f
 
 ### How to identify them ?
 
-- It will feature problems where you deal with sorted arrays (or Linked Lists) and need to find a set of elements that
-  fulfill certain constraints
+- It will feature problems where you deal with sorted arrays (or Linked Lists) and need to find a set of elements that fulfill certain constraints
 - The set of elements in the array is a pair, a triplet, or even a subarray
 
 ### Common Problems:
@@ -289,7 +284,7 @@ Similar to 3Sum. Iterate through every element in the array and solve for 3Sum.
 
 #### 10. [LC-Easy: 844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)
 
-#### 11. [LC-Easy: 581. Shortest Unsorted Continuous Subarray (Minimum Window Sort)](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
+#### 11. [LC-Medium: 581. Shortest Unsorted Continuous Subarray (Minimum Window Sort)](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
 
 Easy but tricky problem.
 
@@ -311,9 +306,63 @@ Easy but tricky problem.
 
 ## 3. Fast & Slow Pointers
 
+- The Fast & Slow pointer approach, also known as the **Hare & Tortoise** algorithm, is a pointer algorithm that uses two pointers which move through the array (or sequence/LinkedList) at different speeds. 
+- By moving at different speeds (say, in a cyclic LinkedList), the algorithm proves that the two pointers are bound to meet. The fast pointer should catch the slow pointer once both the pointers are in a cyclic loop.
+
+### How to identify them ?
+
+- This approach is quite useful when dealing with **cyclic LinkedLists** or **arrays**.
+
+#### 1. [LC-Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+[Leetcode Solution](https://leetcode.com/problems/linked-list-cycle/discuss/978029/Kotlin-%3A-Simple-Fast-and-Slow-Pointers-Solution)
+
+#### 2. [LC-Medium: 142. Linked List Cycle 2](https://leetcode.com/problems/linked-list-cycle-ii/)
+[Leetcode Solution](https://leetcode.com/problems/linked-list-cycle-ii/discuss/978180/Kotlin-%3A-Simple-Solution-%2B-O(N)-Time-and-O(1)-Space)
+
+#### 3. [LC-Easy: 202. Happy Number](https://leetcode.com/problems/happy-number/)
+[Leetcode Solution](https://leetcode.com/problems/happy-number/discuss/978222/Kotlin-%3A-2-pointers-solution-%2B-100-time)
+
+#### 4. [LC-Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+[Leetcode Solution](https://leetcode.com/problems/middle-of-the-linked-list/discuss/978281/Kotlin-%3A-Fast-and-Slow-pointers-one-pass-simple-solution)
+
+#### 5. [LC-Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+[Leetcode Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978866/Kotlin-%3A-Fast-and-Slow-Pointers-and-in-place-LL-reversal-with-explanation)
+[Alternate Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978907/Java%3A-Fast-and-Slow-Pointer-Technique-using-Stack)
+
+#### 6. [LC-Medium: 143. Reorder List](https://leetcode.com/problems/reorder-list/)
+[Leetcode Solution](https://leetcode.com/problems/reorder-list/discuss/979575/Kotlin-%3A-Fast-and-Slow-Pointers-%2B-Linked-List-Reversal-Solution)
+
+#### 7. [LC-Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/)
+[Leetcode Solution](https://leetcode.com/problems/circular-array-loop/discuss/395670/JAVA-simple-DFS-O(n)-beat-100-time-and-space)
+[Alternate Solution](https://www.educative.io/courses/grokking-the-coding-interview/NE67J9YMj3m)
+
 <br/>
 
 ## 4. Merge Intervals
+
+#### 1. [LC-Medium: 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+[Leetcode Solution]()
+
+#### 2. [LC-Medium: 57. Insert Interval](https://leetcode.com/problems/insert-interval/)
+[Leetcode Solution]()
+
+#### 3. [LC-Medium: 986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
+[Leetcode Solution]()
+
+#### 4. [LC-Medium: 435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+[Leetcode Solution]()
+
+#### 5. [LC-Medium: 729 . My Calendar](https://leetcode.com/problems/my-calendar-i/)
+[Leetcode Solution]()
+
+#### 6. [LC-Medium: 253. Minimum Meeting Rooms](https://leetcode.com/problems/meeting-rooms-ii/)
+[Leetcode Solution]()
+
+#### 7. [LC-Medium: 621. Task Scheduler (Max CPU Load)](https://leetcode.com/problems/task-scheduler/)
+[Leetcode Solution]()
+
+#### 8. [LC-Hard: 759. Employee Free Time](https://leetcode.com/problems/employee-free-time/)
+[Leetcode Solution]()
 
 <br/>
 
