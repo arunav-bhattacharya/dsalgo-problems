@@ -193,6 +193,8 @@ Similar to the previous problem.
 4. [LC-Hard: 480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)
 5. [LC-Hard: 727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/)
 6. [LC-Hard: 1074. Number of Submatrices That Sum to Target](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/)
+7. [LC-Hard: 828. Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/)
+8. [LC-Hard 995. Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/)
 
 <br/>
 
@@ -300,7 +302,7 @@ Easy but tricky problem.
 2. [LC-Hard: 42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 3. [LC-Medium: 11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 4. [LC-Easy: 88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
-5. [LC-Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+5. [LC-Medium: 532. K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)
 
 <br/>
 
@@ -312,6 +314,8 @@ Easy but tricky problem.
 ### How to identify them ?
 
 - This approach is quite useful when dealing with **cyclic LinkedLists** or **arrays**.
+
+### Common Problems
 
 #### 1. [LC-Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 [Leetcode Solution](https://leetcode.com/problems/linked-list-cycle/discuss/978029/Kotlin-%3A-Simple-Fast-and-Slow-Pointers-Solution)
@@ -335,10 +339,27 @@ Easy but tricky problem.
 #### 7. [LC-Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/)
 [Leetcode Solution](https://leetcode.com/problems/circular-array-loop/discuss/395670/JAVA-simple-DFS-O(n)-beat-100-time-and-space)
 [Alternate Solution](https://www.educative.io/courses/grokking-the-coding-interview/NE67J9YMj3m)
+[Explanation on DFS Solution](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)
+
+### Practice Problems
+
+1. [LC-Medium: 2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+2. [LC-Medium: 19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+3. [LC-Medium: 148. Sort List](https://leetcode.com/problems/sort-list/)
+4. [LC-Easy: 203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
+5. [LC-Medium: 532. K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)
 
 <br/>
 
 ## 4. Merge Intervals
+
+This pattern describes an efficient technique to deal with overlapping intervals. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap.
+
+Given two intervals (‘a’ and ‘b’), there will be six different ways the two intervals can relate to each other:
+
+![merge-intervals](./.images/merge-intervals.png "merge-intervals")
+
+### Common Problems
 
 #### 1. [LC-Medium: 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 [Leetcode Solution]()
