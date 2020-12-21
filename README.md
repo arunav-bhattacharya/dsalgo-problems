@@ -84,6 +84,8 @@ the new position of the sliding window, we need to do two things:
 - Subtract the element going out of the sliding window i.e., subtract the first element of the window.
 - Add the new element getting included in the sliding window i.e., the element coming right after the end of the window.
 
+[Solution](https://leetcode.com/problems/maximum-average-subarray-i/discuss/973703/Kotlin-%3A-Sliding-Window-O(N)-Solution)
+
 #### 2. [LC-Medium: 209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
 - First, we will add-up elements from the beginning of the array until their sum becomes greater than or equal to `‘S’`.
@@ -96,6 +98,8 @@ the new position of the sliding window, we need to do two things:
   happen in multiple steps; in each step we will do two things:
     - Check if the current window length is the smallest so far, and if so, remember its length.
     - Subtract the first element of the window from the running sum to shrink the sliding window.
+
+[Solution](https://leetcode.com/problems/minimum-size-subarray-sum/discuss/973706/Kotlin%3A-Sliding-Window)
 
 #### 3. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 
@@ -112,17 +116,20 @@ the new position of the sliding window, we need to do two things:
 - At the end of each step, we’ll check if the current window length is the longest so far, and if so, remember its
   length.
 
-[Leetcode Solution](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/submissions/)
+[Solution](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/submissions/)
 
 #### 4. [LC-Medium: 904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
 
 Similar to the previous problem
+- [Solution](https://leetcode.com/problems/fruit-into-baskets/discuss/973710/Kotlin-%3A-Sliding-Window-%2B-O(N)-%2B-Easy-to-understand)
 
 #### 5. [LC-Medium: 3. Longest Substring _Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 - Trick is finding the starting Index in the Window. When a repeating character is found then - "the next character
   after the repeating character becomes the starting index, if that character is in the window, or else starting Window
   doesn't change because the character found is not part of the current window".
+
+[Solution](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/973714/Kotlin%3A-Sliding-Window-%2B-O(N)-%2B-Easy-to-understand)
 
 #### 6. [LC-Medium: 424. Longest repeating Substring after replacing k characters](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
@@ -137,14 +144,13 @@ Similar to the previous problem
   character that is moved out of the window.
 - If the next character coming in is the most repeating character, then the window grows or else it simply slides again.
 
-[Leetcode Solution](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/971458/O(N)-%2B-Sliding-Window-%2B-Simple-with-explanation-%2B-Kotlin-solution)
+[Solution](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/971458/O(N)-%2B-Sliding-Window-%2B-Simple-with-explanation-%2B-Kotlin-solution)
 
 #### 7. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-We’ll iterate through the array to add one number at a time in the window. We’ll also keep track of the maximum number
-of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s
-repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `‘k’` remaining 0s, we
-should shrink the window as we are not allowed to replace more than `‘k’` 0s.
+- We’ll iterate through the array to add one number at a time in the window. We’ll also keep track of the maximum number of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `‘k’` remaining 0s, we should shrink the window as we are not allowed to replace more than `‘k’` 0s.
+
+[Solution](https://leetcode.com/problems/max-consecutive-ones-iii/discuss/973718/Kotlin%3A-Sliding-Window-%2B-O(N)-%2B-Simple-solution)
 
 #### 8. [LC-Medium: 567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
 
@@ -156,11 +162,13 @@ For a string to be a permutation of another string it must satisfy the following
 
 Based on these properties and using Sliding Window technique, we can solve this problem.
 
-[Leetcode Solution](https://leetcode.com/problems/permutation-in-string/discuss/859923/Simple-Java-O(N)-solution-using-Hashmap-with-explanation)
+[Solution](https://leetcode.com/problems/permutation-in-string/discuss/859923/Simple-Java-O(N)-solution-using-Hashmap-with-explanation)
 
 #### 9. [LC-Medium: 438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 
 Similar to the previous problem.
+
+- [Solution](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/973719/Kotlin%3A-Sliding-Window-%2B-O(N)-%2B-Simple-solution)
 
 #### 10. [LC-Hard: 76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
@@ -171,7 +179,7 @@ Similar to the previous problem.
 
 [Video Explanation](https://www.youtube.com/watch?v=eS6PZLjoaq8)
 
-[Leetcode Solution](https://leetcode.com/problems/minimum-window-substring/discuss/861236/Simple-Java-O(N)-hashmap-%2B-sliding-window-solution-with-explanation-11ms)
+[Solution](https://leetcode.com/problems/minimum-window-substring/discuss/861236/Simple-Java-O(N)-hashmap-%2B-sliding-window-solution-with-explanation-11ms)
 
 #### 11. [LC-Hard: 30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
@@ -181,7 +189,7 @@ Similar to the previous problem.
 - Store all the words from the words[] into a hashmap. Similarly, extract the words from string and store it in a
   hashmap in every iteration and then compare the 2 hashmaps if they are equal. (**2 HashMaps solution**)
 
-[Leetcode Solution](https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/862010/Simple-Java-Solution-with-explanation-using-2-HashMaps-O(m*N)-(m-no.-of-words-in-words))
+[Solution](https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/862010/Simple-Java-Solution-with-explanation-using-2-HashMaps-O(m*N)-(m-no.-of-words-in-words))
 
 
 ### Practice Problems:
@@ -220,17 +228,21 @@ Two pointers is really an easy and effective technique which is typically used f
 - If the sum is greater than the sum of the item in the front and end, then we decrement the end pointer.
 - If the sum is lesser than the sum of the item in the front and end, then we increment the start pointer.
 
+[Solution](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/discuss/973730/Kotlin%3A-2-pointers)
+
 #### 2. [LC-Easy: 26. Remove duplicates from sorted array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 - Iterate over the sorted array and check for duplicates in the previous position.
 - If duplicate found we simply increment the iterating pointer.
-- Whenever the current item is not equal to the previous unique item, we increment a unique counter that can be used to
-  maintain the unique items together in the array.
+- Whenever the current item is not equal to the previous unique item, we increment a unique counter that can be used to maintain the unique items together in the array.
+
+[Solution](https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/973742/Kotlin-%3A-Slow-and-Fast-Pointers)
 
 #### 3. [LC-Easy: 977. Squaring a sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
 
-- Since square of negative values gives a positive value, so we'll use this concept to evaluate the higher of the 2
-  squared values in the sorted array and accordingly place it at the end.
+- Since square of negative values gives a positive value, so we'll use this concept to evaluate the higher of the 2 squared values in the sorted array and accordingly place it at the end.
+
+[Solution](https://leetcode.com/problems/squares-of-a-sorted-array/discuss/973935/Kotlin-%3A-Optimized-solution-using-2-pointers)
 
 #### 4. [LC-Medium: 15. 3Sum](https://leetcode.com/problems/3sum/)
 
@@ -247,11 +259,13 @@ The algo to solve the problem -
    being processed should not be same as the previous item in the sorted array, then we might end up adding duplicate
    triplets in the final result.
 
-[Leetcode Solution](https://leetcode.com/problems/3sum/discuss/864537/Simple-Java-On(N2)-solution-with-explanation)
+[Solution](https://leetcode.com/problems/3sum/discuss/864537/Simple-Java-On(N2)-solution-with-explanation)
 
 #### 5. [LC-Medium: 15. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 
 Similar to the previous one
+
+- [Solution](https://leetcode.com/problems/3sum-closest/discuss/973974/Kotlin-%3A-Two-pointers-%2B-O(N2)-optimized-solution)
 
 #### 6. [LC-Medium: 259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)
 
@@ -259,6 +273,8 @@ Similar to the previous one
 - Trick is to calculate the count. If the largest element from the rear when included in the sum makes the count less
   than the target, then all the elements from the front pointer to the rear pointer will sum up less than the target
   sum.
+  
+- [Solution](https://leetcode.com/problems/3sum-smaller/discuss/974095/Kotlin-%3A-100-Time-O(N2)-%2B-2-pointer-solution)
 
 #### 7. [LC-Medium: 713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/submissions/)
 
@@ -272,19 +288,19 @@ Similar to the previous one
 - Whenever we find a valid window, the possible set of new subarrays possible in that window is the length of the
   window.
 
-[Leetcode Solution](https://leetcode.com/problems/subarray-product-less-than-k/discuss/108861/JavaC%2B%2B-Clean-Code-with-Explanation)
+[Solution](https://leetcode.com/problems/subarray-product-less-than-k/discuss/108861/JavaC%2B%2B-Clean-Code-with-Explanation)
 
 #### 8. [LC-Medium: 75. Sort Colors (Dutch National Flag)](https://leetcode.com/problems/sort-colors/)
 
-- [Leetcode Solution](https://leetcode.com/submissions/detail/401622683/)
+- [Solution](https://leetcode.com/submissions/detail/401622683/)
 
 #### 9. [LC-Medium: 4. 4Sum](https://leetcode.com/problems/4sum/)
 
-- [Leetcode Solution](https://leetcode.com/problems/4sum/discuss/975865/Kotlin-%3A-Simple-N3-Solution-similar-to-3-Sum)
+- [Solution](https://leetcode.com/problems/4sum/discuss/975865/Kotlin-%3A-Simple-N3-Solution-similar-to-3-Sum)
 
 #### 10. [LC-Easy: 844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)
 
-- [Leetcode Solution](https://leetcode.com/problems/backspace-string-compare/discuss/975975/Kotlin%3A-Simple-Solution)
+- [Solution](https://leetcode.com/problems/backspace-string-compare/discuss/975975/Kotlin%3A-Simple-Solution)
 
 #### 11. [LC-Medium: 581. Shortest Unsorted Continuous Subarray (Minimum Window Sort)](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
 
@@ -296,7 +312,7 @@ Easy but tricky problem.
 - Extend the subarray from beginning to include any number which is bigger than the minimum of the subarray.
 - Similarly, extend the subarray from the end to include any number which is smaller than the maximum of the subarray.
 
-[Leetcode Solution](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/977280/Kotlin-%3A-2-pointers-solution-with-explanation)
+[Solution](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/977280/Kotlin-%3A-2-pointers-solution-with-explanation)
 
 ### Practice Problems
 
@@ -320,26 +336,26 @@ Easy but tricky problem.
 ### Common Problems
 
 #### 1. [LC-Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
-- [Leetcode Solution](https://leetcode.com/problems/linked-list-cycle/discuss/978029/Kotlin-%3A-Simple-Fast-and-Slow-Pointers-Solution)
+- [Solution](https://leetcode.com/problems/linked-list-cycle/discuss/978029/Kotlin-%3A-Simple-Fast-and-Slow-Pointers-Solution)
 
 #### 2. [LC-Medium: 142. Linked List Cycle 2](https://leetcode.com/problems/linked-list-cycle-ii/)
-- [Leetcode Solution](https://leetcode.com/problems/linked-list-cycle-ii/discuss/978180/Kotlin-%3A-Simple-Solution-%2B-O(N)-Time-and-O(1)-Space)
+- [Solution](https://leetcode.com/problems/linked-list-cycle-ii/discuss/978180/Kotlin-%3A-Simple-Solution-%2B-O(N)-Time-and-O(1)-Space)
 
 #### 3. [LC-Easy: 202. Happy Number](https://leetcode.com/problems/happy-number/)
-- [Leetcode Solution](https://leetcode.com/problems/happy-number/discuss/978222/Kotlin-%3A-2-pointers-solution-%2B-100-time)
+- [Solution](https://leetcode.com/problems/happy-number/discuss/978222/Kotlin-%3A-2-pointers-solution-%2B-100-time)
 
 #### 4. [LC-Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
-- [Leetcode Solution](https://leetcode.com/problems/middle-of-the-linked-list/discuss/978281/Kotlin-%3A-Fast-and-Slow-pointers-one-pass-simple-solution)
+- [Solution](https://leetcode.com/problems/middle-of-the-linked-list/discuss/978281/Kotlin-%3A-Fast-and-Slow-pointers-one-pass-simple-solution)
 
 #### 5. [LC-Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
-- [Leetcode Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978866/Kotlin-%3A-Fast-and-Slow-Pointers-and-in-place-LL-reversal-with-explanation)
+- [Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978866/Kotlin-%3A-Fast-and-Slow-Pointers-and-in-place-LL-reversal-with-explanation)
 - [Alternate Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978907/Java%3A-Fast-and-Slow-Pointer-Technique-using-Stack)
 
 #### 6. [LC-Medium: 143. Reorder List](https://leetcode.com/problems/reorder-list/)
-- [Leetcode Solution](https://leetcode.com/problems/reorder-list/discuss/979575/Kotlin-%3A-Fast-and-Slow-Pointers-%2B-Linked-List-Reversal-Solution)
+- [Solution](https://leetcode.com/problems/reorder-list/discuss/979575/Kotlin-%3A-Fast-and-Slow-Pointers-%2B-Linked-List-Reversal-Solution)
 
 #### 7. [LC-Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/)
-- [Leetcode Solution](https://leetcode.com/problems/circular-array-loop/discuss/395670/JAVA-simple-DFS-O(n)-beat-100-time-and-space)
+- [Solution](https://leetcode.com/problems/circular-array-loop/discuss/395670/JAVA-simple-DFS-O(n)-beat-100-time-and-space)
 [Alternate Solution](https://www.educative.io/courses/grokking-the-coding-interview/NE67J9YMj3m)
 [Explanation on DFS Solution](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)
 
@@ -369,28 +385,28 @@ Given two intervals (‘a’ and ‘b’), there will be six different ways the 
 ### Common Problems
 
 #### 1. [LC-Medium: 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-- [Leetcode Solution](https://leetcode.com/problems/merge-intervals/discuss/979878/Kotlin%3A-Simple-solution)
+- [Solution](https://leetcode.com/problems/merge-intervals/discuss/979878/Kotlin%3A-Simple-solution)
 
 #### 2. [LC-Medium: 57. Insert Interval](https://leetcode.com/problems/insert-interval/)
-- [Leetcode Solution](https://leetcode.com/problems/insert-interval/discuss/980176/Kotlin%3A-Simple-O(N)-Solution-with-explanation)
+- [Solution](https://leetcode.com/problems/insert-interval/discuss/980176/Kotlin%3A-Simple-O(N)-Solution-with-explanation)
 
 #### 3. [LC-Medium: 986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
-- [Leetcode Solution]()
+- [Solution]()
 
 #### 4. [LC-Medium: 435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
-- [Leetcode Solution]()
+- [Solution]()
 
 #### 5. [LC-Medium: 729 . My Calendar](https://leetcode.com/problems/my-calendar-i/)
-- [Leetcode Solution]()
+- [Solution]()
 
 #### 6. [LC-Medium: 253. Minimum Meeting Rooms](https://leetcode.com/problems/meeting-rooms-ii/)
-- [Leetcode Solution]()
+- [Solution]()
 
 #### 7. [LC-Medium: 621. Task Scheduler (Max CPU Load)](https://leetcode.com/problems/task-scheduler/)
-- [Leetcode Solution]()
+- [Solution]()
 
 #### 8. [LC-Hard: 759. Employee Free Time](https://leetcode.com/problems/employee-free-time/)
-- [Leetcode Solution]()
+- [Solution]()
 
 
 ### Practice Problems
