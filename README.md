@@ -67,9 +67,9 @@
 ### How to identify them ?
 
 - Things we iterate over sequentially
-    - Contiguous sequence of elements
+    - _**Contiguous sequence**_ of elements
     - Strings, arrays, linked lists
-- Looking for some sub-range like Min, Max, Longest, Shortest, Contained
+- Looking for **_some sub-range_** like **Min**, **Max**, **Longest**, **Shortest**, Contained
     - Maybe we need to calculate something
 
 ### Common problems
@@ -183,7 +183,6 @@ Similar to the previous problem.
 
 [Leetcode Solution](https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/862010/Simple-Java-Solution-with-explanation-using-2-HashMaps-O(m*N)-(m-no.-of-words-in-words))
 
-<br/>
 
 ### Practice Problems:
 
@@ -209,15 +208,14 @@ Two pointers is really an easy and effective technique which is typically used f
 
 ### How to identify them ?
 
-- It will feature problems where you deal with sorted arrays (or Linked Lists) and need to find a set of elements that fulfill certain constraints
+- It will feature problems where you deal with **_sorted arrays (or Linked Lists)_** and need to find a set of elements that fulfill certain constraints
 - The set of elements in the array is a pair, a triplet, or even a subarray
 
 ### Common Problems:
 
 #### 1. [LC-Easy: 167. Pair with target sum in a sorted Array](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 
-- We'll use 2 pointers - start and end and iterate through the array until end pointer surpasses front pointer or we
-  find the target sum.
+- We'll use 2 pointers - start and end and iterate through the array until end pointer surpasses front pointer or we find the target sum.
 - If the sum is equal to the sum of the item in the front and end, then we return the 2 indices.
 - If the sum is greater than the sum of the item in the front and end, then we decrement the end pointer.
 - If the sum is lesser than the sum of the item in the front and end, then we increment the start pointer.
@@ -278,13 +276,15 @@ Similar to the previous one
 
 #### 8. [LC-Medium: 75. Sort Colors (Dutch National Flag)](https://leetcode.com/problems/sort-colors/)
 
-[Leetcode Solution](https://leetcode.com/submissions/detail/401622683/)
+- [Leetcode Solution](https://leetcode.com/submissions/detail/401622683/)
 
 #### 9. [LC-Medium: 4. 4Sum](https://leetcode.com/problems/4sum/)
 
-Similar to 3Sum. Iterate through every element in the array and solve for 3Sum.
+- [Leetcode Solution](https://leetcode.com/problems/4sum/discuss/975865/Kotlin-%3A-Simple-N3-Solution-similar-to-3-Sum)
 
 #### 10. [LC-Easy: 844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)
+
+- [Leetcode Solution](https://leetcode.com/problems/backspace-string-compare/discuss/975975/Kotlin%3A-Simple-Solution)
 
 #### 11. [LC-Medium: 581. Shortest Unsorted Continuous Subarray (Minimum Window Sort)](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
 
@@ -295,6 +295,8 @@ Easy but tricky problem.
 - Find the maximum and minimum of this subarray.
 - Extend the subarray from beginning to include any number which is bigger than the minimum of the subarray.
 - Similarly, extend the subarray from the end to include any number which is smaller than the maximum of the subarray.
+
+[Leetcode Solution](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/977280/Kotlin-%3A-2-pointers-solution-with-explanation)
 
 ### Practice Problems
 
@@ -313,31 +315,31 @@ Easy but tricky problem.
 
 ### How to identify them ?
 
-- This approach is quite useful when dealing with **cyclic LinkedLists** or **arrays**.
+- This approach is quite useful when dealing with **_cyclic data_** in the form of  _**LinkedLists**_ or _**arrays**_.
 
 ### Common Problems
 
 #### 1. [LC-Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
-[Leetcode Solution](https://leetcode.com/problems/linked-list-cycle/discuss/978029/Kotlin-%3A-Simple-Fast-and-Slow-Pointers-Solution)
+- [Leetcode Solution](https://leetcode.com/problems/linked-list-cycle/discuss/978029/Kotlin-%3A-Simple-Fast-and-Slow-Pointers-Solution)
 
 #### 2. [LC-Medium: 142. Linked List Cycle 2](https://leetcode.com/problems/linked-list-cycle-ii/)
-[Leetcode Solution](https://leetcode.com/problems/linked-list-cycle-ii/discuss/978180/Kotlin-%3A-Simple-Solution-%2B-O(N)-Time-and-O(1)-Space)
+- [Leetcode Solution](https://leetcode.com/problems/linked-list-cycle-ii/discuss/978180/Kotlin-%3A-Simple-Solution-%2B-O(N)-Time-and-O(1)-Space)
 
 #### 3. [LC-Easy: 202. Happy Number](https://leetcode.com/problems/happy-number/)
-[Leetcode Solution](https://leetcode.com/problems/happy-number/discuss/978222/Kotlin-%3A-2-pointers-solution-%2B-100-time)
+- [Leetcode Solution](https://leetcode.com/problems/happy-number/discuss/978222/Kotlin-%3A-2-pointers-solution-%2B-100-time)
 
 #### 4. [LC-Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
-[Leetcode Solution](https://leetcode.com/problems/middle-of-the-linked-list/discuss/978281/Kotlin-%3A-Fast-and-Slow-pointers-one-pass-simple-solution)
+- [Leetcode Solution](https://leetcode.com/problems/middle-of-the-linked-list/discuss/978281/Kotlin-%3A-Fast-and-Slow-pointers-one-pass-simple-solution)
 
 #### 5. [LC-Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
-[Leetcode Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978866/Kotlin-%3A-Fast-and-Slow-Pointers-and-in-place-LL-reversal-with-explanation)
-[Alternate Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978907/Java%3A-Fast-and-Slow-Pointer-Technique-using-Stack)
+- [Leetcode Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978866/Kotlin-%3A-Fast-and-Slow-Pointers-and-in-place-LL-reversal-with-explanation)
+- [Alternate Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978907/Java%3A-Fast-and-Slow-Pointer-Technique-using-Stack)
 
 #### 6. [LC-Medium: 143. Reorder List](https://leetcode.com/problems/reorder-list/)
-[Leetcode Solution](https://leetcode.com/problems/reorder-list/discuss/979575/Kotlin-%3A-Fast-and-Slow-Pointers-%2B-Linked-List-Reversal-Solution)
+- [Leetcode Solution](https://leetcode.com/problems/reorder-list/discuss/979575/Kotlin-%3A-Fast-and-Slow-Pointers-%2B-Linked-List-Reversal-Solution)
 
 #### 7. [LC-Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/)
-[Leetcode Solution](https://leetcode.com/problems/circular-array-loop/discuss/395670/JAVA-simple-DFS-O(n)-beat-100-time-and-space)
+- [Leetcode Solution](https://leetcode.com/problems/circular-array-loop/discuss/395670/JAVA-simple-DFS-O(n)-beat-100-time-and-space)
 [Alternate Solution](https://www.educative.io/courses/grokking-the-coding-interview/NE67J9YMj3m)
 [Explanation on DFS Solution](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)
 
@@ -353,37 +355,47 @@ Easy but tricky problem.
 
 ## 4. Merge Intervals
 
-This pattern describes an efficient technique to deal with overlapping intervals. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap.
+This pattern describes an efficient technique to deal with **overlapping intervals**. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap.
 
 Given two intervals (‘a’ and ‘b’), there will be six different ways the two intervals can relate to each other:
 
 ![merge-intervals](./.images/merge-intervals.png "merge-intervals")
 
+
+### How to identify them ?
+
+- This approach is quite useful when dealing with **_intervals_**, **_overlapping items_** or **_merging intervals_**.
+
 ### Common Problems
 
 #### 1. [LC-Medium: 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-[Leetcode Solution]()
+- [Leetcode Solution](https://leetcode.com/problems/merge-intervals/discuss/979878/Kotlin%3A-Simple-solution)
 
 #### 2. [LC-Medium: 57. Insert Interval](https://leetcode.com/problems/insert-interval/)
-[Leetcode Solution]()
+- [Leetcode Solution](https://leetcode.com/problems/insert-interval/discuss/980176/Kotlin%3A-Simple-O(N)-Solution-with-explanation)
 
 #### 3. [LC-Medium: 986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
-[Leetcode Solution]()
+- [Leetcode Solution]()
 
 #### 4. [LC-Medium: 435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
-[Leetcode Solution]()
+- [Leetcode Solution]()
 
 #### 5. [LC-Medium: 729 . My Calendar](https://leetcode.com/problems/my-calendar-i/)
-[Leetcode Solution]()
+- [Leetcode Solution]()
 
 #### 6. [LC-Medium: 253. Minimum Meeting Rooms](https://leetcode.com/problems/meeting-rooms-ii/)
-[Leetcode Solution]()
+- [Leetcode Solution]()
 
 #### 7. [LC-Medium: 621. Task Scheduler (Max CPU Load)](https://leetcode.com/problems/task-scheduler/)
-[Leetcode Solution]()
+- [Leetcode Solution]()
 
 #### 8. [LC-Hard: 759. Employee Free Time](https://leetcode.com/problems/employee-free-time/)
-[Leetcode Solution]()
+- [Leetcode Solution]()
+
+
+### Practice Problems
+
+1. [LC-Medium 452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 
 <br/>
 
