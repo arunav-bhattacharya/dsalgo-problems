@@ -77,7 +77,7 @@
 #### 1. [LC-Easy: 643. Maximum Average Subarray](https://leetcode.com/problems/maximum-average-subarray-i/)
 
 If you observe closely, you will realize that to calculate the sum of a contiguous subarray we can utilize the sum of
-the previous subarray. For this, consider each subarray as a Sliding Window of size `‘k’`. To calculate the sum of the
+the previous subarray. For this, consider each subarray as a Sliding Window of size `'k'`. To calculate the sum of the
 next subarray, we need to slide the window ahead by one element. So to slide the window forward and calculate the sum of
 the new position of the sliding window, we need to do two things:
 
@@ -88,13 +88,13 @@ the new position of the sliding window, we need to do two things:
 
 #### 2. [LC-Medium: 209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
-- First, we will add-up elements from the beginning of the array until their sum becomes greater than or equal to `‘S’`.
+- First, we will add-up elements from the beginning of the array until their sum becomes greater than or equal to `'S'`.
 - These elements will constitute our sliding window. We are asked to find the smallest such window having a sum greater
-  than or equal to `‘S’`. We will remember the length of this window as the smallest window so far.
+  than or equal to `'S'`. We will remember the length of this window as the smallest window so far.
 - After this, we will keep adding one element in the sliding window (i.e. slide the window ahead), in a stepwise
   fashion.
-- In each step, we will also try to shrink the window from the beginning. We will shrink the window until the window’s
-  sum is smaller than `‘S’` again. This is needed as we intend to find the smallest window. This shrinking will also
+- In each step, we will also try to shrink the window from the beginning. We will shrink the window until the window's
+  sum is smaller than `'S'` again. This is needed as we intend to find the smallest window. This shrinking will also
   happen in multiple steps; in each step we will do two things:
     - Check if the current window length is the smallest so far, and if so, remember its length.
     - Subtract the first element of the window from the running sum to shrink the sliding window.
@@ -103,17 +103,17 @@ the new position of the sliding window, we need to do two things:
 
 #### 3. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 
-- Insert characters from the beginning of the string until we have `‘K’` distinct characters in a HashMap.
+- Insert characters from the beginning of the string until we have `'K'` distinct characters in a HashMap.
 - These characters will constitute our sliding window. We are asked to find the longest such window having no more
-  than `‘K’` distinct characters. We will remember the length of this window as the longest window so far.
+  than `'K'` distinct characters. We will remember the length of this window as the longest window so far.
 - After this, we will keep adding one character in the sliding window (i.e. slide the window ahead), in a stepwise
   fashion.
 - In each step, we will try to shrink the window from the beginning if the count of distinct characters in the HashMap
-  is larger than `‘K’`. We will shrink the window from the beginning until we have no more than `‘K’` distinct
+  is larger than `'K'`. We will shrink the window from the beginning until we have no more than `'K'` distinct
   characters in the HashMap. This is needed as we intend to find the longest window.
-- While shrinking, we’ll decrement the frequency of the character going out of the window and remove it from the HashMap
+- While shrinking, we'll decrement the frequency of the character going out of the window and remove it from the HashMap
   if its frequency becomes zero.
-- At the end of each step, we’ll check if the current window length is the longest so far, and if so, remember its
+- At the end of each step, we'll check if the current window length is the longest so far, and if so, remember its
   length.
 
 [Solution](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/submissions/)
@@ -148,7 +148,7 @@ Similar to the previous problem
 
 #### 7. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-- We’ll iterate through the array to add one number at a time in the window. We’ll also keep track of the maximum number of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `‘k’` remaining 0s, we should shrink the window as we are not allowed to replace more than `‘k’` 0s.
+- We'll iterate through the array to add one number at a time in the window. We'll also keep track of the maximum number of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `'k'` remaining 0s, we should shrink the window as we are not allowed to replace more than `'k'` 0s.
 
 [Solution](https://leetcode.com/problems/max-consecutive-ones-iii/discuss/973718/Kotlin%3A-Sliding-Window-%2B-O(N)-%2B-Simple-solution)
 
@@ -371,9 +371,9 @@ Easy but tricky problem.
 
 ## 4. Merge Intervals
 
-This pattern describes an efficient technique to deal with **overlapping intervals**. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap.
+- This pattern describes an efficient technique to deal with **overlapping intervals**. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap.
 
-Given two intervals (‘a’ and ‘b’), there will be six different ways the two intervals can relate to each other:
+- Given two intervals ('a' and 'b'), there will be six different ways the two intervals can relate to each other:
 
 ![merge-intervals](./.images/merge-intervals.png "merge-intervals")
 
@@ -391,18 +391,18 @@ Given two intervals (‘a’ and ‘b’), there will be six different ways the 
 - [Solution](https://leetcode.com/problems/insert-interval/discuss/980176/Kotlin%3A-Simple-O(N)-Solution-with-explanation)
 
 #### 3. [LC-Medium: 986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
-- [Solution]()
+- [Solution](https://leetcode.com/problems/interval-list-intersections/discuss/981024/Kotlin-%3A-Two-Pointers-O(N)-Solution)
 
 #### 4. [LC-Medium: 435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
-- [Solution]()
+- [Solution](https://leetcode.com/problems/non-overlapping-intervals/discuss/981083/Kotlin%3A-Easy-Solution-(nLogn)-%2B-Greedy)
 
 #### 5. [LC-Medium: 729 . My Calendar](https://leetcode.com/problems/my-calendar-i/)
-- [Solution]()
+- [Solution](https://leetcode.com/problems/my-calendar-i/discuss/981137/Kotlin-%3A-Simple-O(N)-Solution-%2B-Merge-Intervals)
 
 #### 6. [LC-Medium: 253. Minimum Meeting Rooms](https://leetcode.com/problems/meeting-rooms-ii/)
-- [Solution]()
+- [Solution](https://leetcode.com/problems/meeting-rooms-ii/discuss/981223/Kotlin%3A-Simple-solution-%2B-Merge-Intervals-%2B-Greedy-approach)
 
-#### 7. [LC-Medium: 621. Task Scheduler (Max CPU Load)](https://leetcode.com/problems/task-scheduler/)
+#### 7. [LC-Medium: 621. Max CPU Load](https://leetcode.com/problems/task-scheduler/)
 - [Solution]()
 
 #### 8. [LC-Hard: 759. Employee Free Time](https://leetcode.com/problems/employee-free-time/)
@@ -412,50 +412,89 @@ Given two intervals (‘a’ and ‘b’), there will be six different ways the 
 ### Practice Problems
 
 1. [LC-Medium 452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+2. [LC-Hard 732. My Calendar III](https://leetcode.com/problems/my-calendar-iii/)
+3. [LC-Easy 252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
 
 <br/>
 
 ## 5. Cyclic Sort
 
+- This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given range. For example, take the following problem:
+
+> You are given an unsorted array containing numbers taken from the range 1 to 'n'. The array can have duplicates, which means that some numbers will be missing. Find all the missing numbers.
+
+- To efficiently solve this problem, we can use the fact that the input array contains numbers in the range of 1 to n'. For example, to efficiently sort the array, we can try placing each number in its correct place, i.e., placing '1' at index '0', placing '2' at index '1', and so on. Once we are done with the sorting, we can iterate the array to find all indices that are missing the correct numbers. These will be our required numbers.
+
 <br/>
 
-## 6. Linked List
+## 6. In-place reversal of Linked List
+
+- In a lot of problems, we are asked to reverse the links between a set of nodes of a LinkedList. Often, the constraint is that we need to do this in-place, i.e., using the existing node objects and without using extra memory.
 
 <br/>
 
 ## 7. Breadth First Search
 
+- This pattern is based on the Breadth First Search (BFS) technique to traverse a tree.
+
+Any problem involving the traversal of a tree in a level-by-level order can be efficiently solved using this approach. We will use a Queue to keep track of all the nodes of a level before we jump onto the next level. This also means that the space complexity of the algorithm will be O(W), where 'W' is the maximum number of nodes on any level.
+
 <br/>
 
 ## 8. Depth First Search
+
+- This pattern is based on the Depth First Search (DFS) technique to traverse a tree.
+
+We will be using recursion (or we can also use a stack for the iterative approach) to keep track of all the previous (parent) nodes while traversing. This also means that the space complexity of the algorithm will be O(H)O(H), where 'H' is the maximum height of the tree.
 
 <br/>
 
 ## 9. Two Heaps
 
+- In many problems, where we are given a set of elements such that _we can divide them into two parts_. To solve the problem, we are interested in knowing the smallest element in one part and the biggest element in the other part. This pattern is an efficient approach to solve such problems.
+
+This pattern uses two Heaps to solve these problems; A **Min Heap** to find the smallest element and a **Max Heap** to find the biggest element.
+
 <br/>
 
 ## 10. Subsets
+
+- A huge number of coding interview problems involve dealing with _Permutations and Combinations_ of a given set of elements. This pattern describes an efficient **Breadth First Search (BFS)** approach to handle all these problems.
 
 <br/>
 
 ## 11. Binary Search
 
+- Whenever we are given a sorted Array or LinkedList or Matrix, and we are asked to find a certain element, the best algorithm we can use is the Binary Search
+
 <br/>
 
 ## 12. Top `K` elements
+
+- Any problem that asks us to find the top/smallest/frequent 'K' elements among a given set falls under this pattern.
+
+- The best data structure that comes to mind to keep track of **'K' elements is Heap**. This pattern will make use of the Heap to solve multiple problems dealing with 'K' elements at a time from a set of given elements.
 
 <br/>
 
 ## 13. `K` way merge
 
+- This pattern helps us solve problems that involve a list of sorted arrays.
+
+- Whenever we are given 'K' sorted arrays, we can use a **Heap** to efficiently perform a sorted traversal of all the elements of all arrays. We can push the smallest (first) element of each sorted array in a **Min Heap** to get the overall minimum. While inserting elements to the _Min Heap_ we keep track of which array the element came from. We can, then, remove the top element from the heap to get the smallest element and push the next element from the same array, to which this smallest element belonged, to the heap. We can repeat this process to make a sorted traversal of all elements.
 <br/>
 
 ## 14. Topological Sort (Graph)
 
+- Topological Sort is used to find a linear ordering of elements that have dependencies on each other. For example, if event `B` is dependent on event `A`, `A` comes before `B` in topological ordering.
+
+- This pattern defines an easy way to understand the technique for performing topological sorting of a set of elements and then solves a few problems using it.
+
 <br/>
 
 ## 15. Connected Components (Graph)
+
+- Tarjan's Algorithm
 
 <br/>
 <br/>
@@ -550,3 +589,5 @@ Given two intervals (‘a’ and ‘b’), there will be six different ways the 
 >   - https://algo.monster/problems/stats
 >   - https://emre.me/
 >   - https://backtobackswe.com/platform/content
+>   - https://seanprashad.com/leetcode-patterns/
+>   - https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
