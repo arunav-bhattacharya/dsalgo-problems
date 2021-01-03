@@ -377,6 +377,17 @@ Easy but tricky problem.
 
 ![merge-intervals](./.images/merge-intervals.png "merge-intervals")
 
+### Types
+
+1. Merge Intervals - Overlapping Intervals 
+    - Sort on start time
+    - Identify intervals as mentioned above
+2. Interval Scheduling - Non-overlapping Intervals
+    - Sort on end time
+    - Identify intervals as mentioned above
+3. Find Min/Max intervals overlapping/non-overlapping 
+    - Use Heap (Priority Queue) to order the intervals
+    - Use 2 Arrays to store start and end times separately 
 
 ### How to identify them ?
 
