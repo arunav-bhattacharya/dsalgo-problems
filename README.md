@@ -559,7 +559,17 @@ This pattern uses two Heaps to solve these problems; A **Min Heap** to find the 
 
 <br/>
 
-## 7. Recursion & Backtracking
+## 7. Backtracking
+
+Backtracking is a programming technique to find all possible solutions for a given problem. We start the problem by making a choice and check if it satisfies the constraints given in a problem. If it does not satisfy then we do not explore further and go back to the previous step and again choose the next possible option and see if it satisfies the condition. This process of making a choice and checking constraints is done recursively until we find a particular solution or a constraint is not met.
+
+The process of finding one of the many solutions is normally done in a **Depth First manner**. 
+
+<br/>
+
+## 8. Branch and Bound
+
+Similar to Backtracking, Branch and Bound is also a programming technique to find out all possible solutions for a given problem. It also employs the process of making a choice and checking for constraints, but it follows a **Breadth First Approach**.
 
 <br/>
 <br/>
