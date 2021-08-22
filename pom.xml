@@ -11,6 +11,7 @@
 
     <modules>
         <module>1-sliding-window</module>
+        <module>2-recursion</module>
     </modules>
 
     <build>

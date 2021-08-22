@@ -512,6 +512,39 @@ This pattern uses two Heaps to solve these problems; A **Min Heap** to find the 
 
 # [Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)
 
+Dynamic Programming (DP) is an algorithmic technique for solving an **optimization problem** by breaking it down into **simpler sub-problems** and utilizing the fact that the **optimal solution** to the overall problem depends upon the optimal solution to its sub-problems.
+
+### Characteristics of DP:
+
+Two important characteristics of DP are - 
+
+1. Overlapping Sub-problems
+2. Optimal Sub-structure
+
+![fibonacci](./.images/fibonacci.png "fibonacci")
+
+In the above diagram `fib(0), fib(1), fib(2)` are overlapping sub-problems as for solving the original problem `fib(4)` we need to solve smaller sub-problems more than once.
+
+In order to solve this problem we can define an optimal sub-structure as - 
+
+`fib(n) = fib(n-1) + fib(n-2)`
+
+### Methods to solve DP problems:
+
+DP offers two methods to solve a problem - 
+
+1. **Top down with Memoization**:
+   
+   In this approach, we try to solve the bigger problem by recursively finding the solution to smaller sub-problems. Whenever we solve a sub-problem, we cache its result so that we don’t end up solving it repeatedly if it’s called multiple times. Instead, we can just return the saved result. This technique of storing the results of already solved subproblems is called **Memoization**.
+   
+
+2. **Bottom up with Tabulation**:
+   
+   **Tabulation** is the opposite of the top-down approach and avoids recursion. In this approach, we solve the problem “bottom-up” (i.e. by solving all the related sub-problems first). This is typically done by filling up an **n-dimensional table**. Based on the results in the table, the solution to the top/original problem is then computed.
+
+
+> Tabulation is the opposite of Memoization, as in Memoization we solve the problem and maintain a map of already solved sub-problems. In other words, in memoization, we do it top-down in the sense that we solve the top problem first (which typically recurses down to solve the sub-problems).
+
 ## 1. 0/1 Knapsack
 
 <br/>
@@ -537,6 +570,16 @@ This pattern uses two Heaps to solve these problems; A **Min Heap** to find the 
 
 ## 1. Sorting & Searching
 
+- Major are Merge Sort and Quick Sort. Both uses Divide & Conquer technique
+
+- In **Merge Sort**, the process is as follows - 
+  - Divide the list/array into smaller fragments until it is not further divisible. This part of the problem is recursive.
+  - In the conquer part we actually merge/combine the individual fragments into sorted lists, until the whole list is merged and sorted
+    
+- In **Quick Sort**, the process is as follows -
+  - We choose a pivot and then partition the array/list such that all values greater than the pivot is right of the pivot and all values lesser than the pivot is on the left of the pivot.
+  - This process is done recursively. At the end of each iteration, the current pivot is placed in its correct position, had the array been sorted. This process is repeated until the whole array is sorted.
+
 <br/>
 
 ## 2. Greedy Algorithms
@@ -559,17 +602,53 @@ This pattern uses two Heaps to solve these problems; A **Min Heap** to find the 
 
 <br/>
 
-## 7. Backtracking
+## 7. Recursion
 
-Backtracking is a programming technique to find all possible solutions for a given problem. We start the problem by making a choice and check if it satisfies the constraints given in a problem. If it does not satisfy then we do not explore further and go back to the previous step and again choose the next possible option and see if it satisfies the condition. This process of making a choice and checking constraints is done recursively until we find a particular solution or a constraint is not met.
+### Steps to follow to identify any recursive problem 
 
-The process of finding one of the many solutions is normally done in a **Depth First manner**. 
+- **Base Case**: Find the smallest sub-problem for which we know the answer
+- **Recursion**: Assume that for a given problem, recursion will correctly calculate a sub-problem
+- **Self Work**: Try using the sub-problem to come up with a solution for a bigger problem
+
+### Common Problems
+
+- [x] Factorial of a given number N
+- [x] Fibonacci Series upto N numbers
+- [ ] Print numbers upto N in ascending order
+- [ ] Print numbers upto N in descending order
+- [ ] Print numbers in descending and then in ascending order
+- [ ] Count number of binary strings with no consecutive ones
+- [ ] Friends Pairing - N people can go in a party single or in a pair
+- [ ] Power of a^b
+- [ ] Subset
+- [ ] 2D Matrix Traversal
+- [ ] Number of ways to jump in N cells. Can jump in 1-
+- [ ] Lexicographical printing of numbers
+- [ ] Generate all permutations of a given string, having unique characters in string
+- [ ] Generate all permutations of a given string, having duplicate characters in string
 
 <br/>
 
-## 8. Branch and Bound
+## 8. Backtracking
 
-Similar to Backtracking, Branch and Bound is also a programming technique to find out all possible solutions for a given problem. It also employs the process of making a choice and checking for constraints, but it follows a **Breadth First Approach**.
+Backtracking is an algorithm/technique to find all possible solutions for a given problem. We start the problem by making a choice and check if it satisfies the constraints given in a problem. If it does not satisfy then we do not explore further and go back to the previous step and again choose the next possible option and see if it satisfies the condition. This process of making a choice and checking constraints is done recursively until we find a particular solution or a constraint is not met.
+
+The process of finding one of the many solutions is normally done in a **Depth First manner**. 
+
+For backtracking problems, we essentially start solving the problem by making a choice out of the many available to us and then we validate if that choice satisfies the constraints and then we proceed towards reaching the goal recursively.
+
+### How to identify them ?
+
+- Find all possible **combinations or permutations** of given set of values
+- Find all **subset** or value from a given set
+
+<br/>
+
+## 9. Branch and Bound
+
+Similar to Backtracking, Branch and Bound is also a programming technique to find out all possible solutions for a given problem. It also employs the process of making a choice and checking for constraints, but it follows a **Breadth First Approach**. Brand and Bound technique is normally used to solve minimization problem.
+
+We can use a **Stack** or **Queue** to keep track of the solutions to explore. When using Queue it is referred to as FIFO and when using Stack it is referred to as LIFO. The other technique to solve a problem as Branch and Bound is to use **Least-Cost** Branch & Bound. This technique is generally used when there is a cost associated for selecting a particular choice in a solution.
 
 <br/>
 <br/>
