@@ -612,20 +612,22 @@ DP offers two methods to solve a problem -
 
 ### Common Problems
 
-- [x] Factorial of a given number N
-- [x] Fibonacci Series upto N numbers
-- [ ] Print numbers upto N in ascending order
-- [ ] Print numbers upto N in descending order
-- [ ] Print numbers in descending and then in ascending order
-- [ ] Count number of binary strings with no consecutive ones
-- [ ] Friends Pairing - N people can go in a party single or in a pair
-- [ ] Power of a^b
-- [ ] Subset
-- [ ] 2D Matrix Traversal
-- [ ] Number of ways to jump in N cells. Can jump in 1-
-- [ ] Lexicographical printing of numbers
-- [ ] Generate all permutations of a given string, having unique characters in string
-- [ ] Generate all permutations of a given string, having duplicate characters in string
+- Basics
+    - [x] Factorial of a given number N
+    - [x] Fibonacci Series upto N numbers
+    - [x] Print numbers upto N in ascending order
+    - [x] Print numbers upto N in descending order
+    - [x] Print numbers in descending and then in ascending order
+- Some Good problems    
+    - [ ] Count number of binary strings with no consecutive ones
+    - [ ] Friends Pairing - N people can go in a party single or in a pair
+    - [ ] Power of a^b
+    - [ ] Subset
+    - [ ] 2D Matrix Traversal
+    - [ ] Number of ways to jump in N cells. Can jump in 1-
+    - [ ] Lexicographical printing of numbers
+    - [ ] Generate all permutations of a given string, having unique characters in string
+    - [ ] Generate all permutations of a given string, having duplicate characters in string
 
 <br/>
 
