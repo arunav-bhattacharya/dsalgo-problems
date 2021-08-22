@@ -619,8 +619,8 @@ DP offers two methods to solve a problem -
     - [x] Print numbers upto N in descending order
     - [x] Print numbers in descending and then in ascending order
 - Some Good problems    
-    - [ ] Count number of binary strings with no consecutive ones
-    - [ ] Friends Pairing - N people can go in a party single or in a pair
+    - [x] Count number of binary strings with no consecutive ones
+    - [ ] Friends Pairing - N people can go at a party single or in a pair
     - [ ] Power of a^b
     - [ ] Subset
     - [ ] 2D Matrix Traversal
