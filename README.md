@@ -121,6 +121,7 @@ the new position of the sliding window, we need to do two things:
 #### 4. [LC-Medium: 904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
 
 Similar to the previous problem
+
 - [Solution](https://leetcode.com/problems/fruit-into-baskets/discuss/973710/Kotlin-%3A-Sliding-Window-%2B-O(N)-%2B-Easy-to-understand)
 
 #### 5. [LC-Medium: 3. Longest Substring _Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
@@ -148,7 +149,10 @@ Similar to the previous problem
 
 #### 7. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-- We'll iterate through the array to add one number at a time in the window. We'll also keep track of the maximum number of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `'k'` remaining 0s, we should shrink the window as we are not allowed to replace more than `'k'` 0s.
+- We'll iterate through the array to add one number at a time in the window. We'll also keep track of the maximum number
+  of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s
+  repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `'k'` remaining 0s,
+  we should shrink the window as we are not allowed to replace more than `'k'` 0s.
 
 [Solution](https://leetcode.com/problems/max-consecutive-ones-iii/discuss/973718/Kotlin%3A-Sliding-Window-%2B-O(N)-%2B-Simple-solution)
 
@@ -191,7 +195,6 @@ Similar to the previous problem.
 
 [Solution](https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/862010/Simple-Java-Solution-with-explanation-using-2-HashMaps-O(m*N)-(m-no.-of-words-in-words))
 
-
 ### Practice Problems:
 
 1. [LC-Medium: 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
@@ -207,7 +210,8 @@ Similar to the previous problem.
 
 ## 2. Two Pointers
 
-Two pointers is really an easy and effective technique which is typically used for searching pairs in a **sorted array**.
+Two pointers is really an easy and effective technique which is typically used for searching pairs in a **sorted array**
+.
 
 2 types of 2-pointer technique:
 
@@ -216,14 +220,16 @@ Two pointers is really an easy and effective technique which is typically used f
 
 ### How to identify them ?
 
-- It will feature problems where you deal with **_sorted arrays (or Linked Lists)_** and need to find a set of elements that fulfill certain constraints
+- It will feature problems where you deal with **_sorted arrays (or Linked Lists)_** and need to find a set of elements
+  that fulfill certain constraints
 - The set of elements in the array is a pair, a triplet, or even a subarray
 
 ### Common Problems:
 
 #### 1. [LC-Easy: 167. Pair with target sum in a sorted Array](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 
-- We'll use 2 pointers - start and end and iterate through the array until end pointer surpasses front pointer or we find the target sum.
+- We'll use 2 pointers - start and end and iterate through the array until end pointer surpasses front pointer or we
+  find the target sum.
 - If the sum is equal to the sum of the item in the front and end, then we return the 2 indices.
 - If the sum is greater than the sum of the item in the front and end, then we decrement the end pointer.
 - If the sum is lesser than the sum of the item in the front and end, then we increment the start pointer.
@@ -234,13 +240,15 @@ Two pointers is really an easy and effective technique which is typically used f
 
 - Iterate over the sorted array and check for duplicates in the previous position.
 - If duplicate found we simply increment the iterating pointer.
-- Whenever the current item is not equal to the previous unique item, we increment a unique counter that can be used to maintain the unique items together in the array.
+- Whenever the current item is not equal to the previous unique item, we increment a unique counter that can be used to
+  maintain the unique items together in the array.
 
 [Solution](https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/973742/Kotlin-%3A-Slow-and-Fast-Pointers)
 
 #### 3. [LC-Easy: 977. Squaring a sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
 
-- Since square of negative values gives a positive value, so we'll use this concept to evaluate the higher of the 2 squared values in the sorted array and accordingly place it at the end.
+- Since square of negative values gives a positive value, so we'll use this concept to evaluate the higher of the 2
+  squared values in the sorted array and accordingly place it at the end.
 
 [Solution](https://leetcode.com/problems/squares-of-a-sorted-array/discuss/973935/Kotlin-%3A-Optimized-solution-using-2-pointers)
 
@@ -273,7 +281,7 @@ Similar to the previous one
 - Trick is to calculate the count. If the largest element from the rear when included in the sum makes the count less
   than the target, then all the elements from the front pointer to the rear pointer will sum up less than the target
   sum.
-  
+
 - [Solution](https://leetcode.com/problems/3sum-smaller/discuss/974095/Kotlin-%3A-100-Time-O(N2)-%2B-2-pointer-solution)
 
 #### 7. [LC-Medium: 713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/submissions/)
@@ -326,8 +334,10 @@ Easy but tricky problem.
 
 ## 3. Fast & Slow Pointers
 
-- The Fast & Slow pointer approach, also known as the **Hare & Tortoise** algorithm, is a pointer algorithm that uses two pointers which move through the array (or sequence/LinkedList) at different speeds. 
-- By moving at different speeds (say, in a cyclic LinkedList), the algorithm proves that the two pointers are bound to meet. The fast pointer should catch the slow pointer once both the pointers are in a cyclic loop.
+- The Fast & Slow pointer approach, also known as the **Hare & Tortoise** algorithm, is a pointer algorithm that uses
+  two pointers which move through the array (or sequence/LinkedList) at different speeds.
+- By moving at different speeds (say, in a cyclic LinkedList), the algorithm proves that the two pointers are bound to
+  meet. The fast pointer should catch the slow pointer once both the pointers are in a cyclic loop.
 
 ### How to identify them ?
 
@@ -336,28 +346,35 @@ Easy but tricky problem.
 ### Common Problems
 
 #### 1. [LC-Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+
 - [Solution](https://leetcode.com/problems/linked-list-cycle/discuss/978029/Kotlin-%3A-Simple-Fast-and-Slow-Pointers-Solution)
 
 #### 2. [LC-Medium: 142. Linked List Cycle 2](https://leetcode.com/problems/linked-list-cycle-ii/)
+
 - [Solution](https://leetcode.com/problems/linked-list-cycle-ii/discuss/978180/Kotlin-%3A-Simple-Solution-%2B-O(N)-Time-and-O(1)-Space)
 
 #### 3. [LC-Easy: 202. Happy Number](https://leetcode.com/problems/happy-number/)
+
 - [Solution](https://leetcode.com/problems/happy-number/discuss/978222/Kotlin-%3A-2-pointers-solution-%2B-100-time)
 
 #### 4. [LC-Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+
 - [Solution](https://leetcode.com/problems/middle-of-the-linked-list/discuss/978281/Kotlin-%3A-Fast-and-Slow-pointers-one-pass-simple-solution)
 
 #### 5. [LC-Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+
 - [Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978866/Kotlin-%3A-Fast-and-Slow-Pointers-and-in-place-LL-reversal-with-explanation)
 - [Alternate Solution](https://leetcode.com/problems/palindrome-linked-list/discuss/978907/Java%3A-Fast-and-Slow-Pointer-Technique-using-Stack)
 
 #### 6. [LC-Medium: 143. Reorder List](https://leetcode.com/problems/reorder-list/)
+
 - [Solution](https://leetcode.com/problems/reorder-list/discuss/979575/Kotlin-%3A-Fast-and-Slow-Pointers-%2B-Linked-List-Reversal-Solution)
 
 #### 7. [LC-Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/)
+
 - [Solution](https://leetcode.com/problems/circular-array-loop/discuss/395670/JAVA-simple-DFS-O(n)-beat-100-time-and-space)
-[Alternate Solution](https://www.educative.io/courses/grokking-the-coding-interview/NE67J9YMj3m)
-[Explanation on DFS Solution](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)
+  [Alternate Solution](https://www.educative.io/courses/grokking-the-coding-interview/NE67J9YMj3m)
+  [Explanation on DFS Solution](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)
 
 ### Practice Problems
 
@@ -371,7 +388,8 @@ Easy but tricky problem.
 
 ## 4. Merge Intervals
 
-- This pattern describes an efficient technique to deal with **overlapping intervals**. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap.
+- This pattern describes an efficient technique to deal with **overlapping intervals**. In a lot of problems involving
+  intervals, we either need to find overlapping intervals or merge intervals if they overlap.
 
 - Given two intervals ('a' and 'b'), there will be six different ways the two intervals can relate to each other:
 
@@ -379,15 +397,15 @@ Easy but tricky problem.
 
 ### Types
 
-1. Merge Intervals - Overlapping Intervals 
+1. Merge Intervals - Overlapping Intervals
     - Sort on start time
     - Identify intervals as mentioned above
 2. Interval Scheduling - Non-overlapping Intervals
     - Sort on end time
     - Identify intervals as mentioned above
-3. Find Min/Max intervals overlapping/non-overlapping 
+3. Find Min/Max intervals overlapping/non-overlapping
     - Use Heap (Priority Queue) to order the intervals
-    - Use 2 Arrays to store start and end times separately 
+    - Use 2 Arrays to store start and end times separately
 
 ### How to identify them ?
 
@@ -396,29 +414,36 @@ Easy but tricky problem.
 ### Common Problems
 
 #### 1. [LC-Medium: 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+
 - [Solution](https://leetcode.com/problems/merge-intervals/discuss/979878/Kotlin%3A-Simple-solution)
 
 #### 2. [LC-Medium: 57. Insert Interval](https://leetcode.com/problems/insert-interval/)
+
 - [Solution](https://leetcode.com/problems/insert-interval/discuss/980176/Kotlin%3A-Simple-O(N)-Solution-with-explanation)
 
 #### 3. [LC-Medium: 986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
+
 - [Solution](https://leetcode.com/problems/interval-list-intersections/discuss/981024/Kotlin-%3A-Two-Pointers-O(N)-Solution)
 
 #### 4. [LC-Medium: 435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+
 - [Solution](https://leetcode.com/problems/non-overlapping-intervals/discuss/981083/Kotlin%3A-Easy-Solution-(nLogn)-%2B-Greedy)
 
 #### 5. [LC-Medium: 729 . My Calendar](https://leetcode.com/problems/my-calendar-i/)
+
 - [Solution](https://leetcode.com/problems/my-calendar-i/discuss/981137/Kotlin-%3A-Simple-O(N)-Solution-%2B-Merge-Intervals)
 
 #### 6. [LC-Medium: 253. Minimum Meeting Rooms](https://leetcode.com/problems/meeting-rooms-ii/)
+
 - [Solution](https://leetcode.com/problems/meeting-rooms-ii/discuss/981223/Kotlin%3A-Simple-solution-%2B-Merge-Intervals-%2B-Greedy-approach)
 
 #### 7. [LC-Medium: 621. Max CPU Load](https://leetcode.com/problems/task-scheduler/)
+
 - [Solution]()
 
 #### 8. [LC-Hard: 759. Employee Free Time](https://leetcode.com/problems/employee-free-time/)
-- [Solution]()
 
+- [Solution]()
 
 ### Practice Problems
 
@@ -430,17 +455,22 @@ Easy but tricky problem.
 
 ## 5. Cyclic Sort
 
-- This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given range. For example, take the following problem:
+- This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given
+  range. For example, take the following problem:
 
-    > You are given an unsorted array containing numbers taken from the range 1 to 'n'. The array can have duplicates, which means that some numbers will be missing. Find all the missing numbers.
+  > You are given an unsorted array containing numbers taken from the range 1 to 'n'. The array can have duplicates, which means that some numbers will be missing. Find all the missing numbers.
 
-- To efficiently solve this problem, we can use the fact that the input array contains numbers in the range of 1 to n'. For example, to efficiently sort the array, we can try placing each number in its correct place, i.e., placing '1' at index '0', placing '2' at index '1', and so on. Once we are done with the sorting, we can iterate the array to find all indices that are missing the correct numbers. These will be our required numbers.
+- To efficiently solve this problem, we can use the fact that the input array contains numbers in the range of 1 to n'.
+  For example, to efficiently sort the array, we can try placing each number in its correct place, i.e., placing '1' at
+  index '0', placing '2' at index '1', and so on. Once we are done with the sorting, we can iterate the array to find
+  all indices that are missing the correct numbers. These will be our required numbers.
 
 <br/>
 
 ## 6. In-place reversal of Linked List
 
-- In a lot of problems, we are asked to reverse the links between a set of nodes of a LinkedList. Often, the constraint is that we need to do this in-place, i.e., using the existing node objects and without using extra memory.
+- In a lot of problems, we are asked to reverse the links between a set of nodes of a LinkedList. Often, the constraint
+  is that we need to do this in-place, i.e., using the existing node objects and without using extra memory.
 
 <br/>
 
@@ -448,7 +478,9 @@ Easy but tricky problem.
 
 - This pattern is based on the Breadth First Search (BFS) technique to traverse a tree.
 
-Any problem involving the traversal of a tree in a level-by-level order can be efficiently solved using this approach. We will use a Queue to keep track of all the nodes of a level before we jump onto the next level. This also means that the space complexity of the algorithm will be O(W), where 'W' is the maximum number of nodes on any level.
+Any problem involving the traversal of a tree in a level-by-level order can be efficiently solved using this approach.
+We will use a Queue to keep track of all the nodes of a level before we jump onto the next level. This also means that
+the space complexity of the algorithm will be O(W), where 'W' is the maximum number of nodes on any level.
 
 <br/>
 
@@ -456,27 +488,34 @@ Any problem involving the traversal of a tree in a level-by-level order can be e
 
 - This pattern is based on the Depth First Search (DFS) technique to traverse a tree.
 
-We will be using recursion (or we can also use a stack for the iterative approach) to keep track of all the previous (parent) nodes while traversing. This also means that the space complexity of the algorithm will be O(H)O(H), where 'H' is the maximum height of the tree.
+We will be using recursion (or we can also use a stack for the iterative approach) to keep track of all the previous (
+parent) nodes while traversing. This also means that the space complexity of the algorithm will be O(H)O(H), where 'H'
+is the maximum height of the tree.
 
 <br/>
 
 ## 9. Two Heaps
 
-- In many problems, where we are given a set of elements such that _we can divide them into two parts_. To solve the problem, we are interested in knowing the smallest element in one part and the biggest element in the other part. This pattern is an efficient approach to solve such problems.
+- In many problems, where we are given a set of elements such that _we can divide them into two parts_. To solve the
+  problem, we are interested in knowing the smallest element in one part and the biggest element in the other part. This
+  pattern is an efficient approach to solve such problems.
 
-This pattern uses two Heaps to solve these problems; A **Min Heap** to find the smallest element and a **Max Heap** to find the biggest element.
+This pattern uses two Heaps to solve these problems; A **Min Heap** to find the smallest element and a **Max Heap** to
+find the biggest element.
 
 <br/>
 
 ## 10. Subsets
 
-- A huge number of coding interview problems involve dealing with _Permutations and Combinations_ of a given set of elements. This pattern describes an efficient **Breadth First Search (BFS)** approach to handle all these problems.
+- A huge number of coding interview problems involve dealing with _Permutations and Combinations_ of a given set of
+  elements. This pattern describes an efficient **Breadth First Search (BFS)** approach to handle all these problems.
 
 <br/>
 
 ## 11. Binary Search
 
-- Whenever we are given a sorted Array or LinkedList or Matrix, and we are asked to find a certain element, the best algorithm we can use is the Binary Search
+- Whenever we are given a sorted Array or LinkedList or Matrix, and we are asked to find a certain element, the best
+  algorithm we can use is the Binary Search
 
 <br/>
 
@@ -484,7 +523,8 @@ This pattern uses two Heaps to solve these problems; A **Min Heap** to find the 
 
 - Any problem that asks us to find the top/smallest/frequent 'K' elements among a given set falls under this pattern.
 
-- The best data structure that comes to mind to keep track of **'K' elements is Heap**. This pattern will make use of the Heap to solve multiple problems dealing with 'K' elements at a time from a set of given elements.
+- The best data structure that comes to mind to keep track of **'K' elements is Heap**. This pattern will make use of
+  the Heap to solve multiple problems dealing with 'K' elements at a time from a set of given elements.
 
 <br/>
 
@@ -492,14 +532,21 @@ This pattern uses two Heaps to solve these problems; A **Min Heap** to find the 
 
 - This pattern helps us solve problems that involve a list of sorted arrays.
 
-- Whenever we are given 'K' sorted arrays, we can use a **Heap** to efficiently perform a sorted traversal of all the elements of all arrays. We can push the smallest (first) element of each sorted array in a **Min Heap** to get the overall minimum. While inserting elements to the _Min Heap_ we keep track of which array the element came from. We can, then, remove the top element from the heap to get the smallest element and push the next element from the same array, to which this smallest element belonged, to the heap. We can repeat this process to make a sorted traversal of all elements.
-<br/>
+- Whenever we are given 'K' sorted arrays, we can use a **Heap** to efficiently perform a sorted traversal of all the
+  elements of all arrays. We can push the smallest (first) element of each sorted array in a **Min Heap** to get the
+  overall minimum. While inserting elements to the _Min Heap_ we keep track of which array the element came from. We
+  can, then, remove the top element from the heap to get the smallest element and push the next element from the same
+  array, to which this smallest element belonged, to the heap. We can repeat this process to make a sorted traversal of
+  all elements.
+  <br/>
 
 ## 14. Topological Sort (Graph)
 
-- Topological Sort is used to find a linear ordering of elements that have dependencies on each other. For example, if event `B` is dependent on event `A`, `A` comes before `B` in topological ordering.
+- Topological Sort is used to find a linear ordering of elements that have dependencies on each other. For example, if
+  event `B` is dependent on event `A`, `A` comes before `B` in topological ordering.
 
-- This pattern defines an easy way to understand the technique for performing topological sorting of a set of elements and then solves a few problems using it.
+- This pattern defines an easy way to understand the technique for performing topological sorting of a set of elements
+  and then solves a few problems using it.
 
 <br/>
 
@@ -512,36 +559,43 @@ This pattern uses two Heaps to solve these problems; A **Min Heap** to find the 
 
 # [Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)
 
-Dynamic Programming (DP) is an algorithmic technique for solving an **optimization problem** by breaking it down into **simpler sub-problems** and utilizing the fact that the **optimal solution** to the overall problem depends upon the optimal solution to its sub-problems.
+Dynamic Programming (DP) is an algorithmic technique for solving an **optimization problem** by breaking it down into **
+simpler sub-problems** and utilizing the fact that the **optimal solution** to the overall problem depends upon the
+optimal solution to its sub-problems.
 
 ### Characteristics of DP:
 
-Two important characteristics of DP are - 
+Two important characteristics of DP are -
 
 1. Overlapping Sub-problems
 2. Optimal Sub-structure
 
 ![fibonacci](./.images/fibonacci.png "fibonacci")
 
-In the above diagram `fib(0), fib(1), fib(2)` are overlapping sub-problems as for solving the original problem `fib(4)` we need to solve smaller sub-problems more than once.
+In the above diagram `fib(0), fib(1), fib(2)` are overlapping sub-problems as for solving the original problem `fib(4)`
+we need to solve smaller sub-problems more than once.
 
-In order to solve this problem we can define an optimal sub-structure as - 
+In order to solve this problem we can define an optimal sub-structure as -
 
 `fib(n) = fib(n-1) + fib(n-2)`
 
 ### Methods to solve DP problems:
 
-DP offers two methods to solve a problem - 
+DP offers two methods to solve a problem -
 
 1. **Top down with Memoization**:
-   
-   In this approach, we try to solve the bigger problem by recursively finding the solution to smaller sub-problems. Whenever we solve a sub-problem, we cache its result so that we don’t end up solving it repeatedly if it’s called multiple times. Instead, we can just return the saved result. This technique of storing the results of already solved subproblems is called **Memoization**.
-   
+
+   In this approach, we try to solve the bigger problem by recursively finding the solution to smaller sub-problems.
+   Whenever we solve a sub-problem, we cache its result so that we don’t end up solving it repeatedly if it’s called
+   multiple times. Instead, we can just return the saved result. This technique of storing the results of already solved
+   subproblems is called **Memoization**.
+
 
 2. **Bottom up with Tabulation**:
-   
-   **Tabulation** is the opposite of the top-down approach and avoids recursion. In this approach, we solve the problem “bottom-up” (i.e. by solving all the related sub-problems first). This is typically done by filling up an **n-dimensional table**. Based on the results in the table, the solution to the top/original problem is then computed.
 
+   **Tabulation** is the opposite of the top-down approach and avoids recursion. In this approach, we solve the problem
+   “bottom-up” (i.e. by solving all the related sub-problems first). This is typically done by filling up an **
+   n-dimensional table**. Based on the results in the table, the solution to the top/original problem is then computed.
 
 > Tabulation is the opposite of Memoization, as in Memoization we solve the problem and maintain a map of already solved sub-problems. In other words, in memoization, we do it top-down in the sense that we solve the top problem first (which typically recurses down to solve the sub-problems).
 
@@ -572,13 +626,17 @@ DP offers two methods to solve a problem -
 
 - Major are Merge Sort and Quick Sort. Both uses Divide & Conquer technique
 
-- In **Merge Sort**, the process is as follows - 
-  - Divide the list/array into smaller fragments until it is not further divisible. This part of the problem is recursive.
-  - In the conquer part we actually merge/combine the individual fragments into sorted lists, until the whole list is merged and sorted
-    
+- In **Merge Sort**, the process is as follows -
+    - Divide the list/array into smaller fragments until it is not further divisible. This part of the problem is
+      recursive.
+    - In the conquer part we actually merge/combine the individual fragments into sorted lists, until the whole list is
+      merged and sorted
+
 - In **Quick Sort**, the process is as follows -
-  - We choose a pivot and then partition the array/list such that all values greater than the pivot is right of the pivot and all values lesser than the pivot is on the left of the pivot.
-  - This process is done recursively. At the end of each iteration, the current pivot is placed in its correct position, had the array been sorted. This process is repeated until the whole array is sorted.
+    - We choose a pivot and then partition the array/list such that all values greater than the pivot is right of the
+      pivot and all values lesser than the pivot is on the left of the pivot.
+    - This process is done recursively. At the end of each iteration, the current pivot is placed in its correct
+      position, had the array been sorted. This process is repeated until the whole array is sorted.
 
 <br/>
 
@@ -604,7 +662,7 @@ DP offers two methods to solve a problem -
 
 ## 7. Recursion
 
-### Steps to follow to identify any recursive problem 
+### Steps to follow to identify any recursive problem
 
 - **Base Case**: Find the smallest sub-problem for which we know the answer
 - **Recursion**: Assume that for a given problem, recursion will correctly calculate a sub-problem
@@ -612,22 +670,22 @@ DP offers two methods to solve a problem -
 
 ### Common Problems
 
-- Basics problems
+- #### Basic problems
     - [x] Factorial of a given number N
     - [x] Fibonacci Series upto N numbers
     - [x] Print numbers upto N in ascending order
     - [x] Print numbers upto N in descending order
     - [x] Print numbers in descending and then in ascending order
-- Easy problems    
+- #### Easy problems
     - [x] Count number of binary strings with no consecutive ones
     - [x] Friends Pairing - N people can go at a party single or in a pair
     - [x] Power of a^b
     - [x] Given an array, check if it is sorted or not
-- Print problems 
-    - [ ] Print pattern recursively 
+- #### Print problems
+    - [x] Print given patterns recursively
     - [ ] Print all subsets
     - [ ] Print number of binary strings with no consecutive ones
-- Medium Problems
+- #### Medium Problems
     - [ ] 2D Matrix Traversal
     - [ ] Number of ways to jump in N cells. Can jump in 1-6 cells at a time
     - [ ] Lexicographical printing of numbers
@@ -638,11 +696,16 @@ DP offers two methods to solve a problem -
 
 ## 8. Backtracking
 
-Backtracking is an algorithm/technique to find all possible solutions for a given problem. We start the problem by making a choice and check if it satisfies the constraints given in a problem. If it does not satisfy then we do not explore further and go back to the previous step and again choose the next possible option and see if it satisfies the condition. This process of making a choice and checking constraints is done recursively until we find a particular solution or a constraint is not met.
+Backtracking is an algorithm/technique to find all possible solutions for a given problem. We start the problem by
+making a choice and check if it satisfies the constraints given in a problem. If it does not satisfy then we do not
+explore further and go back to the previous step and again choose the next possible option and see if it satisfies the
+condition. This process of making a choice and checking constraints is done recursively until we find a particular
+solution or a constraint is not met.
 
-The process of finding one of the many solutions is normally done in a **Depth First manner**. 
+The process of finding one of the many solutions is normally done in a **Depth First manner**.
 
-For backtracking problems, we essentially start solving the problem by making a choice out of the many available to us and then we validate if that choice satisfies the constraints and then we proceed towards reaching the goal recursively.
+For backtracking problems, we essentially start solving the problem by making a choice out of the many available to us
+and then we validate if that choice satisfies the constraints and then we proceed towards reaching the goal recursively.
 
 ### How to identify them ?
 
@@ -653,9 +716,14 @@ For backtracking problems, we essentially start solving the problem by making a 
 
 ## 9. Branch and Bound
 
-Similar to Backtracking, Branch and Bound is also a programming technique to find out all possible solutions for a given problem. It also employs the process of making a choice and checking for constraints, but it follows a **Breadth First Approach**. Brand and Bound technique is normally used to solve minimization problem.
+Similar to Backtracking, Branch and Bound is also a programming technique to find out all possible solutions for a given
+problem. It also employs the process of making a choice and checking for constraints, but it follows a **Breadth First
+Approach**. Brand and Bound technique is normally used to solve minimization problem.
 
-We can use a **Stack** or **Queue** to keep track of the solutions to explore. When using Queue it is referred to as FIFO and when using Stack it is referred to as LIFO. The other technique to solve a problem as Branch and Bound is to use **Least-Cost** Branch & Bound. This technique is generally used when there is a cost associated for selecting a particular choice in a solution.
+We can use a **Stack** or **Queue** to keep track of the solutions to explore. When using Queue it is referred to as
+FIFO and when using Stack it is referred to as LIFO. The other technique to solve a problem as Branch and Bound is to
+use **Least-Cost** Branch & Bound. This technique is generally used when there is a cost associated for selecting a
+particular choice in a solution.
 
 <br/>
 <br/>
