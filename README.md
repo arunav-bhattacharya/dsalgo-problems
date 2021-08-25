@@ -612,19 +612,24 @@ DP offers two methods to solve a problem -
 
 ### Common Problems
 
-- Basics
+- Basics problems
     - [x] Factorial of a given number N
     - [x] Fibonacci Series upto N numbers
     - [x] Print numbers upto N in ascending order
     - [x] Print numbers upto N in descending order
     - [x] Print numbers in descending and then in ascending order
-- Some Good problems    
+- Easy problems    
     - [x] Count number of binary strings with no consecutive ones
     - [ ] Friends Pairing - N people can go at a party single or in a pair
     - [ ] Power of a^b
-    - [ ] Subset
+    - [ ] Given an array, check if it is sorted or not
+- Print problems 
+    - [ ] Print pattern recursively 
+    - [ ] Print all subsets
+    - [ ] Print number of binary strings with no consecutive ones
+- Medium Problems
     - [ ] 2D Matrix Traversal
-    - [ ] Number of ways to jump in N cells. Can jump in 1-
+    - [ ] Number of ways to jump in N cells. Can jump in 1-6 cells at a time
     - [ ] Lexicographical printing of numbers
     - [ ] Generate all permutations of a given string, having unique characters in string
     - [ ] Generate all permutations of a given string, having duplicate characters in string

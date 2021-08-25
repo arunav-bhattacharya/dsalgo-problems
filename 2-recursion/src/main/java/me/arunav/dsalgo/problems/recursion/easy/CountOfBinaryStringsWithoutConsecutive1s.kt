@@ -1,4 +1,4 @@
-package me.arunav.dsalgo.problems.recursion
+package me.arunav.dsalgo.problems.recursion.easy
 
 /*
 
