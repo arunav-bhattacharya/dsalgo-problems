@@ -620,9 +620,9 @@ DP offers two methods to solve a problem -
     - [x] Print numbers in descending and then in ascending order
 - Easy problems    
     - [x] Count number of binary strings with no consecutive ones
-    - [ ] Friends Pairing - N people can go at a party single or in a pair
-    - [ ] Power of a^b
-    - [ ] Given an array, check if it is sorted or not
+    - [x] Friends Pairing - N people can go at a party single or in a pair
+    - [x] Power of a^b
+    - [x] Given an array, check if it is sorted or not
 - Print problems 
     - [ ] Print pattern recursively 
     - [ ] Print all subsets

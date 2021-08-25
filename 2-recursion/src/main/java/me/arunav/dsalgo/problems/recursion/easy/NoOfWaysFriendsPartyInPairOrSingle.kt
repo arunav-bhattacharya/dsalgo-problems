@@ -1,6 +1,5 @@
 package me.arunav.dsalgo.problems.recursion.easy
 
-
 /*
 
 - If only 1 person go to a party then the no. of ways is 1
