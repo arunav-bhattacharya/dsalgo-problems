@@ -683,8 +683,8 @@ DP offers two methods to solve a problem -
     - [x] Given an array, check if it is sorted or not
 - #### Print problems
     - [x] Print given patterns recursively
-    - [ ] Print all subsets
-    - [ ] Print number of binary strings with no consecutive ones
+    - [x] Print all subsets
+    - [x] Print number of binary strings with no consecutive ones
 - #### Medium Problems
     - [ ] 2D Matrix Traversal
     - [ ] Number of ways to jump in N cells. Can jump in 1-6 cells at a time
