@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="0-misc" />
         <module name="1-sliding-window" />
         <module name="2-recursion" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="0-misc" target="8" />
       <module name="1-sliding-window" target="9" />
       <module name="2-recursion" target="8" />
       <module name="dsalgo-problems" target="8" />

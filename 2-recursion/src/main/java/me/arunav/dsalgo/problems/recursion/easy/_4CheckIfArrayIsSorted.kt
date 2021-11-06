@@ -1,8 +1,10 @@
 package me.arunav.dsalgo.problems.recursion.easy
 
 fun isArraySorted(arr: IntArray, idx: Int): Boolean {
-    if (idx == arr.size - 1) return true
-    if (arr[idx] > arr[idx+1]) return false
+    if (idx == arr.size - 1)
+        return true
+    if (arr[idx] > arr[idx+1])
+        return false
     return isArraySorted(arr, idx + 1)
 }
 

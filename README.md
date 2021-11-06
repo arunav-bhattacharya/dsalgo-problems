@@ -76,10 +76,7 @@
 
 #### 1. [LC-Easy: 643. Maximum Average Subarray](https://leetcode.com/problems/maximum-average-subarray-i/)
 
-If you observe closely, you will realize that to calculate the sum of a contiguous subarray we can utilize the sum of
-the previous subarray. For this, consider each subarray as a Sliding Window of size `'k'`. To calculate the sum of the
-next subarray, we need to slide the window ahead by one element. So to slide the window forward and calculate the sum of
-the new position of the sliding window, we need to do two things:
+If you observe closely, you will realize that to calculate the sum of a contiguous subarray we can utilize the sum of the previous subarray. For this, consider each subarray as a Sliding Window of size `'k'`. To calculate the sum of the next subarray, we need to slide the window ahead by one element. So to slide the window forward and calculate the sum of the new position of the sliding window, we need to do two things:
 
 - Subtract the element going out of the sliding window i.e., subtract the first element of the window.
 - Add the new element getting included in the sliding window i.e., the element coming right after the end of the window.
@@ -89,13 +86,9 @@ the new position of the sliding window, we need to do two things:
 #### 2. [LC-Medium: 209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
 - First, we will add-up elements from the beginning of the array until their sum becomes greater than or equal to `'S'`.
-- These elements will constitute our sliding window. We are asked to find the smallest such window having a sum greater
-  than or equal to `'S'`. We will remember the length of this window as the smallest window so far.
-- After this, we will keep adding one element in the sliding window (i.e. slide the window ahead), in a stepwise
-  fashion.
-- In each step, we will also try to shrink the window from the beginning. We will shrink the window until the window's
-  sum is smaller than `'S'` again. This is needed as we intend to find the smallest window. This shrinking will also
-  happen in multiple steps; in each step we will do two things:
+- These elements will constitute our sliding window. We are asked to find the smallest such window having a sum greater than or equal to `'S'`. We will remember the length of this window as the smallest window so far.
+- After this, we will keep adding one element in the sliding window (i.e. slide the window ahead), in a stepwise fashion.
+- In each step, we will also try to shrink the window from the beginning. We will shrink the window until the window's sum is smaller than `'S'` again. This is needed as we intend to find the smallest window. This shrinking will also happen in multiple steps; in each step we will do two things:
     - Check if the current window length is the smallest so far, and if so, remember its length.
     - Subtract the first element of the window from the running sum to shrink the sliding window.
 
@@ -104,17 +97,11 @@ the new position of the sliding window, we need to do two things:
 #### 3. [LC-Hard: 340. Longest Substring with _At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 
 - Insert characters from the beginning of the string until we have `'K'` distinct characters in a HashMap.
-- These characters will constitute our sliding window. We are asked to find the longest such window having no more
-  than `'K'` distinct characters. We will remember the length of this window as the longest window so far.
-- After this, we will keep adding one character in the sliding window (i.e. slide the window ahead), in a stepwise
-  fashion.
-- In each step, we will try to shrink the window from the beginning if the count of distinct characters in the HashMap
-  is larger than `'K'`. We will shrink the window from the beginning until we have no more than `'K'` distinct
-  characters in the HashMap. This is needed as we intend to find the longest window.
-- While shrinking, we'll decrement the frequency of the character going out of the window and remove it from the HashMap
-  if its frequency becomes zero.
-- At the end of each step, we'll check if the current window length is the longest so far, and if so, remember its
-  length.
+- These characters will constitute our sliding window. We are asked to find the longest such window having no more than `'K'` distinct characters. We will remember the length of this window as the longest window so far.
+- After this, we will keep adding one character in the sliding window (i.e. slide the window ahead), in a stepwise fashion.
+- In each step, we will try to shrink the window from the beginning if the count of distinct characters in the HashMap is larger than `'K'`. We will shrink the window from the beginning until we have no more than `'K'` distinct characters in the HashMap. This is needed as we intend to find the longest window.
+- While shrinking, we'll decrement the frequency of the character going out of the window and remove it from the HashMap if its frequency becomes zero.
+- At the end of each step, we'll check if the current window length is the longest so far, and if so, remember its length.
 
 [Solution](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/submissions/)
 
@@ -126,33 +113,23 @@ Similar to the previous problem
 
 #### 5. [LC-Medium: 3. Longest Substring _Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-- Trick is finding the starting Index in the Window. When a repeating character is found then - "the next character
-  after the repeating character becomes the starting index, if that character is in the window, or else starting Window
-  doesn't change because the character found is not part of the current window".
+- Trick is finding the starting Index in the Window. When a repeating character is found then - "the next character after the repeating character becomes the starting index, if that character is in the window, or else starting Window doesn't change because the character found is not part of the current window".
 
 [Solution](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/973714/Kotlin%3A-Sliding-Window-%2B-O(N)-%2B-Easy-to-understand)
 
 #### 6. [LC-Medium: 424. Longest repeating Substring after replacing k characters](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
-- The idea here is to find a window that satisfies the condition -
-  _count of most repeatable character + no. of allowed replacements <= length of the window_
-- Since the no. of allowed replacements is fixed, then the window size is directly proportional to the count of the most
-  repeating character.
-- Initially the window keeps growing from the end, until all the allowed replacements are added up in the window until
-  it reaches the max size.
-- The moment the condition is not satisfied (i.e., _count of most repeatable character + no. of allowed replacements >
-  size of the window_), then we need to slide the window (not shrink) to the right and decrement the frequency of the
-  character that is moved out of the window.
+- The idea here is to find a window that satisfies the condition - _count of most repeatable character + no. of allowed replacements <= length of the window_
+- Since the no. of allowed replacements is fixed, then the window size is directly proportional to the count of the most  repeating character.
+- Initially the window keeps growing from the end, until all the allowed replacements are added up in the window until it reaches the max size.
+- The moment the condition is not satisfied (i.e., _count of most repeatable character + no. of allowed replacements > size of the window_), then we need to slide the window (not shrink) to the right and decrement the frequency of the character that is moved out of the window.
 - If the next character coming in is the most repeating character, then the window grows or else it simply slides again.
 
 [Solution](https://leetcode.com/problems/longest-repeating-character-replacement/discuss/971458/O(N)-%2B-Sliding-Window-%2B-Simple-with-explanation-%2B-Kotlin-solution)
 
 #### 7. [LC-Medium: 1004. Maximum Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-- We'll iterate through the array to add one number at a time in the window. We'll also keep track of the maximum number
-  of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s
-  repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `'k'` remaining 0s,
-  we should shrink the window as we are not allowed to replace more than `'k'` 0s.
+- We'll iterate through the array to add one number at a time in the window. We'll also keep track of the maximum number of repeating 1s in the current window (`maxOnesCount`). So at any time, we know that we can have a window which has 1s repeating `maxOnesCount` time, so we should try to replace the remaining 0s. If we have more than `'k'` remaining 0s, we should shrink the window as we are not allowed to replace more than `'k'` 0s.
 
 [Solution](https://leetcode.com/problems/max-consecutive-ones-iii/discuss/973718/Kotlin%3A-Sliding-Window-%2B-O(N)-%2B-Simple-solution)
 
@@ -177,8 +154,7 @@ Similar to the previous problem.
 #### 10. [LC-Hard: 76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
 - First search for the window that satisfies the substring in the main string by increasing the end pointer.
-- Once the search string is found, minimize the window by moving the start pointer until the window does not satisfy the
-  substring.
+- Once the search string is found, minimize the window by moving the start pointer until the window does not satisfy the substring.
 - Do this until end of string, and calculate and hold the minimum string on the way.
 
 [Video Explanation](https://www.youtube.com/watch?v=eS6PZLjoaq8)
@@ -187,11 +163,9 @@ Similar to the previous problem.
 
 #### 11. [LC-Hard: 30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
-- Search for each word in given string in every substring window of length = sum of length of concatenated words from
-  words[].
+- Search for each word in given string in every substring window of length = sum of length of concatenated words from words[].
 - Whenever all the words are found in the substring window, then we store the starting index of that substring window.
-- Store all the words from the words[] into a hashmap. Similarly, extract the words from string and store it in a
-  hashmap in every iteration and then compare the 2 hashmaps if they are equal. (**2 HashMaps solution**)
+- Store all the words from the words[] into a hashmap. Similarly, extract the words from string and store it in a hashmap in every iteration and then compare the 2 hashmaps if they are equal. (**2 HashMaps solution**)
 
 [Solution](https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/862010/Simple-Java-Solution-with-explanation-using-2-HashMaps-O(m*N)-(m-no.-of-words-in-words))
 
@@ -220,16 +194,14 @@ Two pointers is really an easy and effective technique which is typically used f
 
 ### How to identify them ?
 
-- It will feature problems where you deal with **_sorted arrays (or Linked Lists)_** and need to find a set of elements
-  that fulfill certain constraints
+- It will feature problems where you deal with **_sorted arrays (or Linked Lists)_** and need to find a set of elements that fulfill certain constraints
 - The set of elements in the array is a pair, a triplet, or even a subarray
 
 ### Common Problems:
 
 #### 1. [LC-Easy: 167. Pair with target sum in a sorted Array](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 
-- We'll use 2 pointers - start and end and iterate through the array until end pointer surpasses front pointer or we
-  find the target sum.
+- We'll use 2 pointers - start and end and iterate through the array until end pointer surpasses front pointer or we find the target sum.
 - If the sum is equal to the sum of the item in the front and end, then we return the 2 indices.
 - If the sum is greater than the sum of the item in the front and end, then we decrement the end pointer.
 - If the sum is lesser than the sum of the item in the front and end, then we increment the start pointer.
@@ -240,15 +212,13 @@ Two pointers is really an easy and effective technique which is typically used f
 
 - Iterate over the sorted array and check for duplicates in the previous position.
 - If duplicate found we simply increment the iterating pointer.
-- Whenever the current item is not equal to the previous unique item, we increment a unique counter that can be used to
-  maintain the unique items together in the array.
+- Whenever the current item is not equal to the previous unique item, we increment a unique counter that can be used to maintain the unique items together in the array.
 
 [Solution](https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/973742/Kotlin-%3A-Slow-and-Fast-Pointers)
 
 #### 3. [LC-Easy: 977. Squaring a sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
 
-- Since square of negative values gives a positive value, so we'll use this concept to evaluate the higher of the 2
-  squared values in the sorted array and accordingly place it at the end.
+- Since square of negative values gives a positive value, so we'll use this concept to evaluate the higher of the 2 squared values in the sorted array and accordingly place it at the end.
 
 [Solution](https://leetcode.com/problems/squares-of-a-sorted-array/discuss/973935/Kotlin-%3A-Optimized-solution-using-2-pointers)
 
@@ -674,7 +644,7 @@ DP offers two methods to solve a problem -
     - [x] Factorial of a given number N
     - [x] Fibonacci Series upto N numbers
     - [x] Print numbers upto N in ascending order
-    - [x] Print numbers upto N in descending order
+    - [x] Print numbers from N to 1 in descending order
     - [x] Print numbers in descending and then in ascending order
 - #### Easy problems
     - [x] Count number of binary strings with no consecutive ones
