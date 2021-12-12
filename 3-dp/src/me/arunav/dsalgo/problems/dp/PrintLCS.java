@@ -35,7 +35,7 @@ class Solution {
     }
 
     public String lcs() {
-        // Populate the dpCache (which also returns the length)
+        // Populate the dpCache (which also returns calculates the length of longest common subsequence)
         int length = lcs(s1, s2, l1, l2, dpCache);
         System.out.println("\nLength of LCS:" + length);
 
@@ -65,10 +65,10 @@ class Solution {
             return 0;
 
         if (dpCache[i][j] == 0) {
-            if (s1.charAt(i - 1) == s2.charAt(j - 1))
-                dpCache[i][j] = 1 + lcs(s1, s2, i - 1, j - 1, dpCache);
-            else
-                dpCache[i][j] = Math.max(lcs(s1, s2, i - 1, j, dpCache), lcs(s1, s2, i, j - 1, dpCache));
+            dpCache[i][j] =
+                    (s1.charAt(i - 1) == s2.charAt(j - 1)) ?
+                            1 + lcs(s1, s2, i - 1, j - 1, dpCache) :
+                            Math.max(lcs(s1, s2, i - 1, j, dpCache), lcs(s1, s2, i, j - 1, dpCache));
         }
         return dpCache[i][j];
     }
