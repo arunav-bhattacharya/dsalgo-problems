@@ -1,4 +1,4 @@
-package me.arunav.dsalgo.problems.recursion.print
+package me.arunav.dsalgo.problems.recursion._3print
 
 /*
 

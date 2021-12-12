@@ -1,4 +1,4 @@
-package me.arunav.dsalgo.problems.recursion.print
+package me.arunav.dsalgo.problems.recursion._3print
 
 fun subsets(arr: IntArray, curr: String, idx: Int) {
     if (idx == arr.size) {

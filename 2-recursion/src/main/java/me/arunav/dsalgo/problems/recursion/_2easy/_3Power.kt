@@ -1,4 +1,4 @@
-package me.arunav.dsalgo.problems.recursion.easy
+package me.arunav.dsalgo.problems.recursion._2easy
 
 // Time Complexity O(b)
 fun power(a: Int, b: Int): Int {

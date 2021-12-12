@@ -1,7 +1,12 @@
-package me.arunav.dsalgo.problems.recursion.easy
+package me.arunav.dsalgo.problems.recursion._2easy
 
 /*
 
+Question:
+There are N persons who want to go to a party. There is a constraint that any person can go alone or go in a pair.
+Calculate the number of ways they can go to the party.
+
+Intuition:
 - If only 1 person go to a party then the no. of ways is 1
 - If 2 persons (X & Y) go to a party then the no. of ways is 2 -
     - X & Y go in a pair

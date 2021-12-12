@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/0-misc/0-misc.iml" filepath="$PROJECT_DIR$/0-misc/0-misc.iml" />
       <module fileurl="file://$PROJECT_DIR$/1-sliding-window/1-sliding-window.iml" filepath="$PROJECT_DIR$/1-sliding-window/1-sliding-window.iml" />
       <module fileurl="file://$PROJECT_DIR$/2-recursion/2-recursion.iml" filepath="$PROJECT_DIR$/2-recursion/2-recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3-dp/3-dp.iml" filepath="$PROJECT_DIR$/3-dp/3-dp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/dsalgo-problems.iml" filepath="$PROJECT_DIR$/.idea/dsalgo-problems.iml" />
     </modules>
   </component>

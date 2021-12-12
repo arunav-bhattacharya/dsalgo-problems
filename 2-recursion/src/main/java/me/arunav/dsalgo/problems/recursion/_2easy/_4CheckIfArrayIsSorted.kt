@@ -1,4 +1,4 @@
-package me.arunav.dsalgo.problems.recursion.easy
+package me.arunav.dsalgo.problems.recursion._2easy
 
 fun isArraySorted(arr: IntArray, idx: Int): Boolean {
     if (idx == arr.size - 1)
